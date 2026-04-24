@@ -23,12 +23,16 @@ export async function selectQuotesAndActions(
   apiKey: string
 ): Promise<QuoteResult> {
   const themeContext = topThemes.map((theme, i) => {
-    const themeReviews = theme.reviewIndices.map(idx => {
+    // Optimization: Only take the first 30 reviews per theme to stay within token limits
+    const sampleSize = 30;
+    const themeReviews = theme.reviewIndices.slice(0, sampleSize).map(idx => {
       const r = reviews[idx];
-      return `[${idx}] (★${r.rating}) "${r.text}"`;
+      // Truncate long reviews to further save tokens
+      const textSnippet = r.text.length > 300 ? r.text.substring(0, 300) + '...' : r.text;
+      return `[${idx}] (★${r.rating}) "${textSnippet}"`;
     }).join('\n');
     
-    return `THEME ${i + 1}: ${theme.label} (${theme.count} reviews, ${theme.sentiment})\n${themeReviews}`;
+    return `THEME ${i + 1}: ${theme.label} (${theme.count} total reviews, sampled ${sampleSize})\n${themeReviews}`;
   }).join('\n\n');
 
   const systemPrompt = `You are a product analyst selecting representative user quotes from app reviews.
