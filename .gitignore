@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.env
+data/raw/
+# output/ (now tracked for automation)
+*.log
+credentials.json
+token.json

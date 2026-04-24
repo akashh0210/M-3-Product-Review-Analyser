@@ -1,0 +1,47 @@
+name: Weekly App Review Pulse
+
+on:
+  schedule:
+    # Every Monday at 04:00 UTC (9:30 AM IST)
+    - cron: '0 4 * * 1'
+  workflow_dispatch: # Allow manual triggering
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write # Needed to commit results back
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Run Pipeline
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          PRODUCT_NAME: ${{ vars.PRODUCT_NAME || 'Groww' }}
+          APP_STORE_ID: ${{ vars.APP_STORE_ID || '1404871703' }}
+          PLAY_STORE_PACKAGE: ${{ vars.PLAY_STORE_PACKAGE || 'com.nextbillion.groww' }}
+          REVIEW_WINDOW_WEEKS: ${{ vars.REVIEW_WINDOW_WEEKS || '12' }}
+          MAX_THEMES: ${{ vars.MAX_THEMES || '5' }}
+          # MCP credentials skipped in CI as they require interactive auth
+        run: npm run run
+
+      - name: Commit and Push Results
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add output/
+          git diff --quiet && git diff --staged --quiet || (git commit -m "📊 Weekly Pulse Update: $(date +'%Y-%m-%d')" && git push)
