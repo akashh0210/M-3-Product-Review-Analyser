@@ -45,10 +45,37 @@ doc_id = os.getenv("GOOGLE_DOC_ID", "1lEv0CfmaeMp0hdLeljRQ2XHdcS46WQjtBjIwtgC0rm
 st.sidebar.info(f"📍 **Server:** {mcp_url}")
 st.sidebar.info(f"📑 **Doc ID:** {doc_id[:10]}...")
 
+def trigger_github_run():
+    gh_token = os.getenv("GH_TOKEN")
+    if not gh_token:
+        st.sidebar.error("❌ GH_TOKEN not found in Secrets")
+        return
+
+    repo = "akashh0210/M-3-Product-Review-Analyser"
+    workflow_id = "weekly-pulse.yml"
+    url = f"https://api.github.com/repos/{repo}/actions/workflows/{workflow_id}/dispatches"
+    
+    headers = {
+        "Authorization": f"Bearer {gh_token}",
+        "Accept": "application/vnd.github+json",
+        "X-GitHub-Api-Version": "2022-11-28"
+    }
+    
+    data = {"ref": "main"}
+    
+    try:
+        response = requests.post(url, headers=headers, json=data)
+        if response.status_code == 204:
+            st.sidebar.success("🚀 Pipeline Triggered! Check GitHub Actions.")
+        else:
+            st.sidebar.error(f"Failed: {response.status_code}")
+            st.sidebar.json(response.json())
+    except Exception as e:
+        st.sidebar.error(f"Error: {str(e)}")
+
 st.sidebar.markdown("---")
 if st.sidebar.button("🚀 Trigger Manual Run"):
-    st.sidebar.warning("Note: This requires GitHub Workflow Dispatch setup.")
-    # Implementation for GitHub API call can go here
+    trigger_github_run()
 
 # --- Main Dashboard ---
 st.title("📈 Product Pulse Dashboard")
