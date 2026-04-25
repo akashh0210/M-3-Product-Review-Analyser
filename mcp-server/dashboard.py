@@ -81,6 +81,8 @@ if st.sidebar.button("🚀 Trigger Manual Run"):
 st.title("📈 Product Pulse Dashboard")
 st.markdown(f"**Last Sync:** {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
 
+review_count = get_metrics()
+
 col1, col2, col3 = st.columns(3)
 
 with col1:
@@ -107,28 +109,28 @@ with col2:
 with col3:
     st.markdown('<div class="status-box">', unsafe_allow_html=True)
     st.subheader("🔄 Latest Data")
-    # Mock data for preview, in reality we'd fetch output/weekly-note.md from GitHub
-    st.metric("Reviews Scanned", "550", "+15%")
-    st.metric("Themes Identified", "5", "Stable")
+    st.metric("Reviews Scanned", f"{review_count}", "Live from GitHub")
+    st.metric("Pipeline Status", "Ready")
     st.markdown('</div>', unsafe_allow_html=True)
 
 st.markdown("---")
 
 # --- Insights Preview ---
 st.header("📝 Latest Pulse Preview")
+weekly_note = fetch_github_file("output/weekly-note.md")
+
+if weekly_note:
+    st.markdown(weekly_note)
+else:
+    st.info("No weekly note found. Run the pipeline to generate your first pulse!")
+
 tab1, tab2 = st.tabs(["Weekly Note", "Sentiment Trend"])
 
 with tab1:
-    st.markdown("""
-    ### 📈 Executive Summary
-    *Theme: App Performance & Stability*
-    - Users are reporting intermittent crashes on the login screen.
-    - Transaction success rate has dipped slightly in the latest version.
-    
-    ### 💡 Action Ideas
-    - **Performance**: Investigate the login race condition.
-    - **UX**: Simplify the SIP cancellation flow.
-    """)
+    if weekly_note:
+        st.markdown(weekly_note)
+    else:
+        st.info("No weekly note found.")
 
 with tab2:
     chart_data = pd.DataFrame({
