@@ -94,12 +94,20 @@ Here are the reviews (numbered):
 
 ${numberedReviews}`;
 
-  const response = await callLLM(apiKey, {
-    systemPrompt,
-    userPrompt,
-    temperature: 0.2,
-    jsonMode: true,
-    model: 'llama-3.1-8b-instant'
+  const response = await withRetry(async () => {
+    return await callLLM(apiKey, {
+      systemPrompt,
+      userPrompt,
+      temperature: 0.2,
+      jsonMode: true,
+      model: 'llama-3.1-8b-instant'
+    });
+  }, {
+    retries: 3,
+    baseDelay: 5000,
+    onRetry: (err, attempt) => {
+      console.warn(`   ⚠️ LLM Batch processing failed (Attempt ${attempt}). Likely Rate Limit. Retrying...`);
+    }
   });
 
   try {
@@ -151,12 +159,20 @@ Return a JSON object in this exact format. Ensure EVERY theme has all keys: "lab
 Batch results:
 ${JSON.stringify(promptThemes, null, 2)}`;
 
-  const response = await callLLM(apiKey, {
-    systemPrompt,
-    userPrompt,
-    temperature: 0.2,
-    jsonMode: true,
-    model: 'llama-3.1-8b-instant'
+  const response = await withRetry(async () => {
+    return await callLLM(apiKey, {
+      systemPrompt,
+      userPrompt,
+      temperature: 0.2,
+      jsonMode: true,
+      model: 'llama-3.1-8b-instant'
+    });
+  }, {
+    retries: 2,
+    baseDelay: 5000,
+    onRetry: (err, attempt) => {
+      console.warn(`   ⚠️ Theme consolidation failed (Attempt ${attempt}). Retrying...`);
+    }
   });
 
   try {

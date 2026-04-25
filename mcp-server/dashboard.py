@@ -1,0 +1,115 @@
+import streamlit as st
+import requests
+import os
+import pandas as pd
+from datetime import datetime
+
+# --- Page Config ---
+st.set_page_config(
+    page_title="Groww | Product Pulse Dashboard",
+    page_icon="📈",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
+
+# --- Styling ---
+st.markdown("""
+    <style>
+    .main {
+        background-color: #0e1117;
+    }
+    .stButton>button {
+        width: 100%;
+        border-radius: 5px;
+        height: 3em;
+        background-color: #00d09c;
+        color: white;
+    }
+    .status-box {
+        padding: 20px;
+        border-radius: 10px;
+        border: 1px solid #30363d;
+        background-color: #161b22;
+        margin-bottom: 20px;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
+# --- Sidebar / Settings ---
+st.sidebar.title("⚙️ Control Center")
+st.sidebar.markdown("---")
+
+mcp_url = os.getenv("MCP_SERVER_URL", "https://akashh0210-product-pulse-server.hf.space")
+doc_id = os.getenv("GOOGLE_DOC_ID", "1lEv0CfmaeMp0hdLeljRQ2XHdcS46WQjtBjIwtgC0rmM")
+
+st.sidebar.info(f"📍 **Server:** {mcp_url}")
+st.sidebar.info(f"📑 **Doc ID:** {doc_id[:10]}...")
+
+st.sidebar.markdown("---")
+if st.sidebar.button("🚀 Trigger Manual Run"):
+    st.sidebar.warning("Note: This requires GitHub Workflow Dispatch setup.")
+    # Implementation for GitHub API call can go here
+
+# --- Main Dashboard ---
+st.title("📈 Product Pulse Dashboard")
+st.markdown(f"**Last Sync:** {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+
+col1, col2, col3 = st.columns(3)
+
+with col1:
+    st.markdown('<div class="status-box">', unsafe_allow_html=True)
+    st.subheader("📡 MCP Health")
+    try:
+        res = requests.get(f"{mcp_url}/", timeout=5)
+        if res.status_code == 200:
+            st.success("Online")
+            st.json(res.json())
+        else:
+            st.error(f"Error: {res.status_code}")
+    except:
+        st.error("Offline / Connecting...")
+    st.markdown('</div>', unsafe_allow_html=True)
+
+with col2:
+    st.markdown('<div class="status-box">', unsafe_allow_html=True)
+    st.subheader("📑 Delivery")
+    st.link_button("Open Google Doc", f"https://docs.google.com/document/d/{doc_id}")
+    st.link_button("Open Gmail Drafts", "https://mail.google.com/mail/u/0/#drafts")
+    st.markdown('</div>', unsafe_allow_html=True)
+
+with col3:
+    st.markdown('<div class="status-box">', unsafe_allow_html=True)
+    st.subheader("🔄 Latest Data")
+    # Mock data for preview, in reality we'd fetch output/weekly-note.md from GitHub
+    st.metric("Reviews Scanned", "550", "+15%")
+    st.metric("Themes Identified", "5", "Stable")
+    st.markdown('</div>', unsafe_allow_html=True)
+
+st.markdown("---")
+
+# --- Insights Preview ---
+st.header("📝 Latest Pulse Preview")
+tab1, tab2 = st.tabs(["Weekly Note", "Sentiment Trend"])
+
+with tab1:
+    st.markdown("""
+    ### 📈 Executive Summary
+    *Theme: App Performance & Stability*
+    - Users are reporting intermittent crashes on the login screen.
+    - Transaction success rate has dipped slightly in the latest version.
+    
+    ### 💡 Action Ideas
+    - **Performance**: Investigate the login race condition.
+    - **UX**: Simplify the SIP cancellation flow.
+    """)
+
+with tab2:
+    chart_data = pd.DataFrame({
+        'Week': ['W1', 'W2', 'W3', 'W4'],
+        'Positive': [70, 75, 68, 82],
+        'Negative': [30, 25, 32, 18]
+    })
+    st.line_chart(chart_data.set_index('Week'))
+
+st.sidebar.markdown("---")
+st.sidebar.caption("v1.2.0 | Built with Antigravity 🛸")

@@ -68,12 +68,20 @@ ${themeContext}`;
   const maxRetries = 3;
 
   while (retries <= maxRetries) {
-    const response = await callLLM(apiKey, {
-      systemPrompt,
-      userPrompt: retries === 0 ? userPrompt : `Your previous quotes were not all exact substrings. Please try again. Ensure EVERY quote is an EXACT word-for-word copy from the reviews provided.\n\n${userPrompt}`,
-      temperature: 0.3,
-      jsonMode: true,
-      model: 'llama-3.1-8b-instant'
+    const response = await withRetry(async () => {
+      return await callLLM(apiKey, {
+        systemPrompt,
+        userPrompt: retries === 0 ? userPrompt : `Your previous quotes were not all exact substrings. Please try again. Ensure EVERY quote is an EXACT word-for-word copy from the reviews provided.\n\n${userPrompt}`,
+        temperature: 0.3,
+        jsonMode: true,
+        model: 'llama-3.1-8b-instant'
+      });
+    }, {
+      retries: 2,
+      baseDelay: 5000,
+      onRetry: (err, attempt) => {
+        console.warn(`   ⚠️ Quote selection API failed (Attempt ${attempt}). Retrying...`);
+      }
     });
 
     try {
