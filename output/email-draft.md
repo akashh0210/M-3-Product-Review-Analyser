@@ -2,7 +2,7 @@
 
 **To:** Product Team, Growth Team, Support Team, Leadership
 **From:** Sk Akash Ali
-**Subject:** Weekly App Review Pulse — Groww (2026-04-18 to 2026-04-24)
+**Subject:** Weekly App Review Pulse — Groww (2026-02-01 to 2026-04-24)
 
 ---
 
@@ -11,22 +11,22 @@ Hi team,
 Please find below this week's app review pulse for **Groww**, summarizing user feedback from the App Store and Google Play.
 
 # Weekly App Review Pulse — Groww
-**Period:** 2026-04-18 to 2026-04-24 | **Reviews:** 500 | **Avg Rating:** 4.0/5
+**Period:** 2026-02-01 to 2026-04-24 | **Reviews:** 553 | **Avg Rating:** 4.1/5
 
 ## Top Themes
-1. App Overall Experience — 107 reviews, positive
-2. App Features & Functionality — 66 reviews, positive
-3. App Crashes & Performance — 20 reviews, negative
+1. General Feedback & Praise — 48 reviews, positive
+2. App Features & Functionality — 34 reviews, positive
+3. App Crashes & Performance Issues — 23 reviews, negative
 
 ## What Users Are Saying
-> "OUTSTANDING performance" — ★5
-> "add more important indicators CPR indicatore and achored vwap with bands and ORB" — ★5
+> "very good very good apps" — ★5
+> "Please add daily P/L dashboard on monthly calender." — ★5
 > "beech market me app stop working...it's loading it's more than 15min" — ★1
 
 ## Recommended Actions
-1. Improve App Overall Experience: Implement a user feedback system to collect and address user concerns, and provide more detailed information about app performance and updates.
-2. Enhance App Features & Functionality: Add more technical indicators and features as requested by users, and provide regular updates to keep the app competitive and user-friendly.
-3. Address App Crashes & Performance Issues: Investigate and fix the root causes of app crashes and performance issues, and provide clear instructions and support to users experiencing problems.
+1. Enhance Customer Support: Implement a more efficient customer support system to address user concerns and provide timely assistance.
+2. Improve App Features: Develop and implement new features, such as a daily P/L dashboard, to enhance user experience and meet evolving user needs.
+3. Optimize App Performance: Conduct thorough testing and debugging to identify and resolve performance issues, ensuring a seamless user experience.
 
 ---
 
