@@ -132,7 +132,6 @@ def get_metrics(df: pd.DataFrame | None) -> dict:
 # Sidebar: Administrative Controls
 # ──────────────────────────────────────────────
 st.sidebar.title("ADMINISTRATION")
-st.sidebar.caption("Pipeline Controls & Configuration")
 st.sidebar.markdown("<br>", unsafe_allow_html=True)
 
 if st.sidebar.button("Execute Manual Analysis"):
@@ -153,13 +152,13 @@ if st.sidebar.button("Synchronize Data"):
     st.rerun()
 
 st.sidebar.markdown("<br>", unsafe_allow_html=True)
-st.sidebar.subheader("DELIVERY ENDPOINTS")
+st.sidebar.subheader("DELIVERY")
 doc_id = os.getenv("GOOGLE_DOC_ID", "1lEv0CfmaeMp0hdLeljRQ2XHdcS46WQjtBjIwtgC0rmM")
-st.sidebar.link_button("Review Analysis Document", f"https://docs.google.com/document/d/{doc_id}", use_container_width=True)
+st.sidebar.link_button("Analysis Document", f"https://docs.google.com/document/d/{doc_id}", use_container_width=True)
 st.sidebar.link_button("Gmail Drafts Folder", "https://mail.google.com/mail/u/0/#drafts", use_container_width=True)
 
 st.sidebar.markdown("<br>", unsafe_allow_html=True)
-st.sidebar.subheader("CONFIGURATION")
+st.sidebar.subheader("CONTEXT")
 st.sidebar.text_input("Product Name", value=os.getenv("PRODUCT_NAME", "Groww"), disabled=True)
 st.sidebar.text_input("App Store ID", value=os.getenv("APP_STORE_ID", "1404871703"), disabled=True)
 st.sidebar.text_input("Play Store ID", value=os.getenv("PLAY_STORE_PACKAGE", "com.nextbillion.groww"), disabled=True)
