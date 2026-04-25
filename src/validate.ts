@@ -13,7 +13,8 @@ async function validate() {
     { name: 'Theme count (Top 3)', fn: checkThemeCount },
     { name: 'Quote grounding', fn: checkQuoteGrounding },
     { name: 'PII Absence', fn: checkPIIAbsence },
-    { name: 'CSV Integrity', fn: checkCSVIntegrity }
+    { name: 'CSV Integrity', fn: checkCSVIntegrity },
+    { name: 'MCP config (informational)', fn: checkMCPConfig }
   ];
 
   for (const check of checks) {
@@ -114,6 +115,35 @@ async function checkPIIAbsence() {
 async function checkCSVIntegrity() {
   const rows = await readCSV('output/reviews.csv');
   return rows.length > 0 && !!rows[0].source && !!rows[0].text;
+}
+
+async function checkMCPConfig(): Promise<boolean> {
+  const googleDocId = process.env.GOOGLE_DOC_ID;
+  const enableGmail = process.env.ENABLE_GMAIL_SEND === 'true';
+
+  if (!googleDocId && !enableGmail) {
+    console.log('   ℹ️ MCP not configured — skipping MCP checks');
+    return true; // informational, never fails
+  }
+
+  // If MCP is configured, check for credentials file
+  try {
+    await fs.stat('credentials.json');
+    console.log('   ✅ MCP configured and credentials.json found');
+  } catch {
+    console.warn('   ⚠️ MCP configured but credentials.json missing — auth will be required');
+  }
+
+  if (enableGmail) {
+    const recipients = process.env.GMAIL_RECIPIENTS;
+    if (!recipients || recipients.trim().length === 0) {
+      console.error('   ❌ ENABLE_GMAIL_SEND=true but GMAIL_RECIPIENTS is empty');
+      return false;
+    }
+    console.log('   ✅ Gmail recipients configured');
+  }
+
+  return true;
 }
 
 validate();

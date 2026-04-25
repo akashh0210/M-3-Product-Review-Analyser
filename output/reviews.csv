@@ -1,61 +1,42 @@
 source,rating,title,text,date,version
-app_store,5,Great,Excellent,2026-04-23,18.7.0
-app_store,5,Fast n [REDACTED],Wonderful interface,2026-04-23,18.7.0
-app_store,1,The application is showing false chat,"I have been using the groww application since sometimes. Generally, the charts are not same as the TradingView grow application must work on these features, so [REDACTED] a one star to this application.",2026-04-23,18.7.0
-app_store,3,Silly mistakes in showing info,On holding section in curent value they are showing average value instead of current value which created a lot of confusion for me,2026-04-23,18.7.0
-app_store,5,Very useful,Very good app,2026-04-23,18.7.0
-app_store,5,Easy to use,[REDACTED] app.,2026-04-23,18.7.0
-app_store,5,Good,Good,2026-04-23,18.7.0
-app_store,5,Fast and furious,We can get fast information trust worthy,2026-04-23,18.7.0
-app_store,5,Easy to use and responsive,I have been using Groww since 6 years and it is the most [REDACTED] among all Stock apps. It has good api integration with other apps like smallcases. Investing and tracking Mutual funds is quite easy on Groww.,2026-04-23,18.7.0
-app_store,5,Easy to use,"Nice designed app, bit still need to add more features like baskets, portfolios manage on mobile app!",2026-04-23,18.7.0
-app_store,5,Good,Good,2026-04-23,18.7.0
-app_store,5,Good,best,2026-04-23,18.7.0
-app_store,5,Best. Using since 3 yr,Easy to use. Best app and experience super. Using since 3 year.,2026-04-23,18.7.0
-app_store,5,Good,Good app,2026-04-23,18.7.0
-app_store,5,App rating & function,"Excellent app , smooth function, very easy to make trade, use details of company,ipo etc. very nice platform",2026-04-23,18.7.0
-app_store,5,Great app,Very fast and amazing,2026-04-23,18.7.0
-app_store,4,App review,App is good without any hiccups so far!,2026-04-23,18.7.0
-app_store,2,"[REDACTED], and overall experience is good, but ….","1) Mandate (AutoPay) Limits  
-Currently, AutoPay mandate is quite restrictive:  
-- UPI mandate is limited (generally up to ₹1–2 lakh depending on bank)  
-- Net banking mandate allows only up to around ₹5 lakh  
-- Default practical usage often stays near ₹1 lakh for seamless transactions  
-
-Because of this, it becomes very difficult for serious investors to invest large lump sum amounts.
-
-For example:  
-- If I want to invest ₹10 lakh or more in one go during market correction, it is not possible smoothly using mandate  
-- I have to split transactions or use manual payment, which defeats the purpose of AutoPay  
-
-Other platforms like NJ Wealth provide higher mandate flexibility (₹20–50 lakh or more), which is much more practical for high-value investors.
-
-👉 Request:  
-Please introduce higher mandate limits (₹20–50 lakh or customizable based on [REDACTED] and bank approval), especially via net banking/eMandate.
-
----
-
-2) Limited SIP Frequency Options  
-Currently, SIP options are limited to monthly (and some dates).  
-
-👉 Missing features:  
-- Daily SIP option  
-- Weekly SIP option  
-
-These are very useful for:  
-- Better cost averaging  
-- Investing during volatile markets  
-- More flexible cash flow management  
-
-Many investors prefer daily/weekly SIP to capture market movements more effectively.
-
----
-
-✅ Overall:  
-Groww is a very user-friendly and excellent platform, but these limitations make it less suitable for high-value and advanced investors.
-
-Improving mandate limits and adding flexible SIP frequencies will significantly enhance the platform experience.",2026-04-23,18.7.0
-app_store,5,Good,Thanks v,2026-04-23,18.7.0
+play_store,5,,veru useful this app,2026-04-24,18.7.1
+play_store,1,,Aap scervis working Castumer saport not good very puar scervis Payment issue not resolved May complain But no any action not good service not good work pese kha gye h bina puche bank me transfer kr kre h or bolte guidline h ase kisi k pese bina kisi permission k ap kese bank me transfer kr re ho gatiya service h grow application ki,2026-04-24,18.7.1
+play_store,2,,this broker is hiding some data .It is not transparent .The transaction is not showing all something hiding the credit. And after release the trade the profit also did not show that much profit and which time will adding didn't show. Now I experience myself this broker is hiding transaction data so that we didn't know whether the profit credit or not credit after release the trade.,2026-04-24,18.7.1
+play_store,5,,good,2026-04-24,18.7.1
+play_store,1,,not nice,2026-04-24,18.6.1
+play_store,5,,"please don't use this , policy is for profit, customer is money, uninstall this app now",2026-04-24,unknown
+play_store,1,,सबसे घटिया ट्रेडिंग एप मेरे को यह लगा क्योंकि इसमें टिफिन एक्टिवेट करने के लिए कुछ चार्ज लेता है मैं 5000 इन्वेस्ट करे थे और उसके टिफिन के एक्टिवेट करने के लिए 3506 रुपए काट दिएइसने,2026-04-24,unknown
+play_store,1,,"I receive notifications from Groww, but there is no option in the app to view all notifications in one place. Once the notification panel is cleared, all notifications are gone and cannot be accessed again. I request that you provide a feature in the app to view daily notifications or notification history",2026-04-24,18.7.1
+play_store,5,,febulous,2026-04-24,18.7.1
+play_store,1,,"The whole app has been ruined, after the April day by day changes, Today's High Low & 52 weeks High Low showing same, Sensex/Nifty Index Expiry are not shown, under any similar stock category, something else stocks are shown & why the market depth has been moved upward, why ?",2026-04-24,18.7.1
+play_store,1,,it's showing wrong 52 weeks high and low. it is same as day high and day low. it's the major issue in the app.,2026-04-24,18.7.1
+play_store,2,,This app charges more brokerage,2026-04-24,18.7.1
+play_store,5,,easy to use,2026-04-24,18.7.1
+play_store,5,,good,2026-04-24,unknown
+play_store,2,,The tradingview chart from groww app is not working. And also it is not properly showing the 52 weeks high and low.. Too much bugs and glitches. Probably have to shift to another broker,2026-04-24,18.7.1
+play_store,5,,add more important indicators CPR indicatore and achored vwap with bands and ORB,2026-04-24,18.7.1
+play_store,5,,nic,2026-04-24,18.7.1
+play_store,5,,grow account open kyu nhi ho rha hai,2026-04-24,18.7.1
+play_store,5,,this is nice and beautiful app 😍😍💘😍💘😍😍💘😍😍😍😍,2026-04-24,18.7.1
+play_store,5,,Best app,2026-04-24,unknown
+play_store,4,,good,2026-04-24,18.7.1
+play_store,1,,"In the holdings section, total shares, invested amount, total P&L in percentage, and day’s P&L in percentage should be shown, just like in Zerodha Kite. This essential information should be visible on a single screen, not after tapping or using filters. This is necessary to take appropriate action to exit from positions. Without this data, trading in Groww is not convenient.",2026-04-24,18.7.1
+play_store,2,,not sopt,2026-04-24,18.0.0
+play_store,5,,good,2026-04-24,unknown
+play_store,5,,good,2026-04-23,18.6.1
+play_store,2,,chat pe sclaper mode le aoo aur sl aur tp ke liye drag and drop jese improvement karo chat pe ek hi screen pe multichat jesa karo jese sahi app pe hai okk,2026-04-23,18.7.1
+play_store,1,,MANUPULATION AND Froud,2026-04-23,18.7.1
+play_store,1,,order box start with 0 .0 .insted this the presnt price to be ther .,2026-04-23,18.7.1
+play_store,5,,best app for investment,2026-04-23,unknown
+play_store,5,,nice app,2026-04-23,18.7.1
+play_store,5,,good groww,2026-04-23,18.7.1
+play_store,1,,worst app,2026-04-23,unknown
+play_store,1,,dual screen mobile app not available 😭,2026-04-23,18.7.1
+play_store,5,,excellent,2026-04-23,18.7.0
+play_store,4,,nice,2026-04-23,18.7.1
+play_store,5,,please brokrage 10 rs kar do taki me groww app me trading kar saku,2026-04-23,18.7.1
+play_store,5,,Great,2026-04-23,18.7.1
+play_store,5,,good luck,2026-04-23,18.7.1
 play_store,5,,good,2026-04-23,18.7.1
 play_store,5,,V good 👍,2026-04-23,18.7.1
 play_store,5,,nice app 👌,2026-04-23,18.7.1
@@ -91,51 +72,6 @@ play_store,5,,good work and easy work 💯,2026-04-23,18.7.1
 play_store,5,,friendly use interface,2026-04-23,18.7.1
 play_store,5,,Best and easiest platform for investment.,2026-04-23,18.7.1
 play_store,5,,Good 👍🏻,2026-04-23,18.7.1
-app_store,5,About app,Nicely updated,2026-04-22,18.7.0
-app_store,5,Best,Best,2026-04-22,18.7.0
-app_store,5,Convenience,A very easy to operate app for beginners,2026-04-22,18.7.0
-app_store,5,Great to great and  great to GROWW,Nice platform for beginning and after …….,2026-04-22,18.7.0
-app_store,5,Amazing,Very [REDACTED],2026-04-22,18.7.0
-app_store,5,Awasome,5,2026-04-22,18.7.0
-app_store,5,Ease of access,Comparatively easy to operate. [REDACTED] makes grow more [REDACTED]. After 3 years of use reviewing this app.,2026-04-22,18.7.0
-app_store,4,New app design is not good,I really like Groww app and I manage most of my investments on Groww. But new app design [REDACTED] is not good. There are tabs to go to your dashboard and other places. Earlier we could directly go to the dashboard for stocks and mutual funds both. Now default view takes you to explore section instead of dashboard which is not what I want to see everyday when I open my app.,2026-04-22,18.7.0
-app_store,5,The Best Broker in India,"No other broker is even close to the groww in terms of [REDACTED], smooth ness of app, customer service.",2026-04-22,18.7.0
-app_store,5,[REDACTED],Professional approach to guide fresh investors like me,2026-04-22,18.7.0
-app_store,5,Fabulous platform for trading,👌👌,2026-04-22,18.7.0
-app_store,5,Good aap for investing,I used this aap since 2018. And [REDACTED]. It is nice aap for investors and investors gets good returns from it.,2026-04-22,18.7.0
-app_store,5,"Easy navigation, best UI","Good UI, infact best UI!",2026-04-22,18.7.0
-app_store,5,Many bhai,👍👍👍👍👍,2026-04-22,18.7.0
-app_store,5,Awesome,Easy to access,2026-04-22,18.7.0
-app_store,5,Best in all time,"Fantastic experience koi nai hai takkar mei 
-God bless you my groww",2026-04-22,18.7.0
-app_store,5,the bestie,no 1 platform for [REDACTED],2026-04-22,18.7.0
-app_store,5,[REDACTED],Amazing app & very much [REDACTED]. Never lagging.,2026-04-22,18.7.0
-app_store,5,good work,"Brielent 
-app",2026-04-22,18.7.0
-app_store,5,Good,10,2026-04-22,18.7.0
-app_store,5,Best App for Investment,Easy to use and easy to track the entire journey with details,2026-04-22,18.7.0
-app_store,5,Experience,Good,2026-04-22,18.7.0
-app_store,5,Rating,Good app,2026-04-22,18.7.0
-app_store,5,Matual fund investment,Fantastic and easy operation,2026-04-22,18.7.0
-app_store,5,Review,Awesome app,2026-04-22,18.7.0
-app_store,4,Great app for investments. Love the UI,"Very easy for Stocks and MF investments. Have been using it for 5 years now.
-
-But one question - when will you make GR-1 available in the mobile app ?",2026-04-22,18.7.0
-app_store,5,Too good,Jabardast app,2026-04-22,18.7.0
-app_store,5,Great App,"[REDACTED], sophisticated UI.",2026-04-22,18.7.0
-app_store,5,Good app,Good app,2026-04-22,18.7.0
-app_store,5,Best app,Best app for stocks Mutual Fund,2026-04-22,18.7.0
-app_store,5,One of the best app for investors,Thumbs up for the team.,2026-04-22,18.7.0
-app_store,5,Interface,Good and accurate to Access,2026-04-22,18.7.0
-app_store,5,To grow,App is easy and colourful,2026-04-22,18.7.0
-app_store,5,Nice,Nice,2026-04-22,18.7.0
-app_store,5,Good app for investment,Mutual funds are good for future,2026-04-22,18.7.0
-app_store,5,Investor Paradise,It’s good,2026-04-22,18.7.0
-app_store,5,Best application,The best app for investment purpose,2026-04-22,18.7.0
-app_store,5,Good,Good,2026-04-22,18.7.0
-app_store,5,Purohit,Very Good by Narpat J Rajpurohit,2026-04-22,18.7.0
-app_store,5,Mr G R Sekhar Reddy,App has very convenient options and easy to trade,2026-04-22,18.7.0
-app_store,5,Good,Nice,2026-04-22,18.7.0
 play_store,5,,best investment trading app,2026-04-22,unknown
 play_store,1,,bro pls solve my problem ive login from wrong which is mine but upi is not available on that number now your asking 50 rs it doesnt make sence please make change in it,2026-04-22,unknown
 play_store,5,,very good,2026-04-22,18.7.1
@@ -181,47 +117,6 @@ play_store,1,,good,2026-04-22,18.7.1
 play_store,5,,good 😊,2026-04-22,18.7.1
 play_store,5,,good app,2026-04-22,18.7.1
 play_store,5,,nice application,2026-04-22,17.97.1
-app_store,5,Best interface but make it possible to add US stocks or ETF,Sometime get stucked but,2026-04-21,18.7.0
-app_store,5,nice,nice app,2026-04-21,18.7.0
-app_store,5,Good one,Good one,2026-04-21,18.7.0
-app_store,5,Good,5,2026-04-21,18.7.0
-app_store,5,Pramod,Excellent,2026-04-21,18.7.0
-app_store,5,Great UI and Great Experience,"I haven’t used many trading apps but I can say am not wanting to move from this one. Never had a complaint, smoothest UI and greatest experience.",2026-04-21,18.7.0
-app_store,4,All good.,I will mark as Excellent once [REDACTED],2026-04-21,18.7.0
-app_store,5,Nice,Easy to use,2026-04-21,18.7.0
-app_store,5,Feature Rich App,Easy to use and informative,2026-04-21,18.7.0
-app_store,5,good,best,2026-04-21,18.7.0
-app_store,5,Very good application,Sundar Jabardast,2026-04-21,18.7.0
-app_store,4,Grow up,Great experience,2026-04-21,18.7.0
-app_store,5,It’s good,Fine app,2026-04-21,18.7.0
-app_store,5,Good app,Good,2026-04-21,18.7.0
-app_store,5,Good,[REDACTED],2026-04-21,18.7.0
-app_store,5,Mr,Good,2026-04-21,18.7.0
-app_store,5,Top notch,Always good,2026-04-21,18.7.0
-app_store,1,iPhone version don’t have portfolio creation option,I’ve been using groww for more than 6 years now. Why iphone don’t have creation portfolios option on stocks side where i can create separate portfolio,2026-04-21,18.7.0
-app_store,5,Stock Management,Great experience.,2026-04-21,18.7.0
-app_store,5,Easy app.,Its a nice app,2026-04-21,18.7.0
-app_store,5,Nice app,Excellent application and easy to invest,2026-04-21,18.7.0
-app_store,5,Awesome,Easy and good [REDACTED].,2026-04-21,18.7.0
-app_store,5,Great app,Easy to use. There are no any hidden charges,2026-04-21,18.7.0
-app_store,5,Great app,Premium feel and systematic investments and w[REDACTED],2026-04-21,18.7.0
-app_store,5,Excellent apps,Excellent apps easy to use and very smooth working every thing is step by step is give if u are new in market easily understand.👌👍,2026-04-21,18.7.0
-app_store,5,Great app,Great app for investing or trading,2026-04-21,18.7.0
-app_store,5,Review,Best App,2026-04-21,18.7.0
-app_store,4,Best UI,"Simple, Fast & Reliable.
-Though Some Small Glitches needs Fixation",2026-04-21,18.7.0
-app_store,5,Financial grow,Very good application very easy to use I like it very much,2026-04-21,18.7.0
-app_store,5,Nice tool,Learning market is quite easy and thanks for all insights. It would be good if there is some suggestion for the investment as well,2026-04-21,18.7.0
-app_store,5,Excellent,Superb app,2026-04-21,18.7.0
-app_store,5,Great but a request,"For MTF, please add a monthly/ annual subscription amd provide MTF at reduced interest rates. One of your competitor is already providing it. Due to that reason, I have to buy MTF trades on another broker. If you bring that on your platform soon, it will be great and appreciated.",2026-04-21,18.7.0
-app_store,5,Great app for trading,Easy [REDACTED] wonderful app for everything related to stock trading,2026-04-21,18.7.0
-app_store,5,Excellent,Simple and Smooth experience,2026-04-21,18.7.0
-app_store,5,SIMPLE SMART SUPERSTAR,Excellent 10/10,2026-04-21,18.7.0
-app_store,5,Super,Fine,2026-04-21,18.7.0
-app_store,1,Not good,I cannot invest till now. All my documents were verified. Still the app says activate stocks,2026-04-21,18.7.0
-app_store,5,Veronica FIGER,Excellent,2026-04-21,18.7.0
-app_store,5,Nice app,Nice app,2026-04-21,18.7.0
-app_store,5,Alok Garg,Great Platform.,2026-04-21,18.7.0
 play_store,5,,"groww is best app for trading, investment and mutual fund",2026-04-21,18.7.1
 play_store,4,,"easy to use and understand UI DESIGN, FAST & RELIABLE",2026-04-21,18.7.1
 play_store,4,,good,2026-04-21,unknown
@@ -325,58 +220,6 @@ play_store,5,,good sIp setting not visible,2026-04-21,18.7.1
 play_store,1,,വളരെ വൃത്തികെട്ട app നമ്മൾ കഷ്ടപ്പെട്ട് ഉണ്ടാകുന്ന ഫ്രോഫിറ്റ് ഫുൾ അവർ തിന്നും... എന്റെ ബാലൻസിൽ ഇപ്പോൾ ഒരു 3000 രൂപ കുറവ് ഉണ്ട്.. അതിനെക്കുറിച്ചു ചോദിച്ചു നോക്കീട്ട് ഒരു Ai എന്തോ പുലമ്പുന്നു... അല്ലാതെ ഒരു കാര്യവും ഇല്ല,2026-04-21,18.7.1
 play_store,5,,good app,2026-04-21,18.7.1
 play_store,5,,good,2026-04-21,18.6.1
-app_store,5,Ddven,Awesome,2026-04-20,18.7.0
-app_store,5,Quick nd easy to understand,Super cool,2026-04-20,18.7.0
-app_store,5,Fully satisfied,This app comes with really great UI experience and in depth knowledge of MF funds and stocks. It’s really easy to use and their customer support os also good so far. Keep doing great work ✌️,2026-04-20,18.7.0
-app_store,5,Easy to use,"The accessibility is very good, analysis also very good.",2026-04-20,18.7.0
-app_store,5,Excellent,Nice service,2026-04-20,18.7.0
-app_store,5,Best App for investing,Best,2026-04-20,18.7.0
-app_store,5,[REDACTED],Easy to use and excellent app for investing money,2026-04-20,18.7.0
-app_store,5,Girish Rane,Very good,2026-04-20,18.7.0
-app_store,4,Good app,For savings,2026-04-20,18.7.0
-app_store,5,Review,Good platform,2026-04-20,18.7.0
-app_store,5,Nice,Very cool,2026-04-20,18.7.0
-app_store,5,Invest,Good application for investors,2026-04-20,18.7.0
-app_store,5,Very Good,Bahut Achcha App hai,2026-04-20,18.7.0
-app_store,5,Mandal,Awesome,2026-04-20,18.7.0
-app_store,5,Good app for investment,My go to app and my family also,2026-04-20,18.7.0
-app_store,5,Mr Negi,[REDACTED],2026-04-20,18.7.0
-app_store,5,Good,Easy,2026-04-20,18.7.0
-app_store,5,Subbu,[REDACTED],2026-04-20,18.7.0
-app_store,5,HNH,Best and easy app with super easy interface to transact,2026-04-20,18.7.0
-app_store,5,Simple but effective,I have been investing in mutual fund through the Groww app for last 7 months. The app is extraordinary with every small informations. The customer service experts are also well trained and they reply within time with proper resolution. A long way to go. Continue the good work # TeamGroww. Always the best app to invest.,2026-04-20,18.7.0
-app_store,5,Good,Amazing wonderful  trading platform,2026-04-20,18.7.0
-app_store,5,Nice👍,Super 👌,2026-04-20,18.7.0
-app_store,5,As a stoke power,👌,2026-04-20,18.7.0
-app_store,5,Simple and easy,Groww is easy to use and simple to use,2026-04-20,18.7.0
-app_store,5,Super,Very secure,2026-04-20,18.7.0
-app_store,5,Good,Good,2026-04-20,18.7.0
-app_store,5,बेहतरीन अनुभव,आसान ट्रेडिंग ऐप,2026-04-20,18.7.0
-app_store,5,Easy & convenient,Great platform even for beginners like me,2026-04-20,18.7.0
-app_store,5,Good,Get info immediately,2026-04-20,18.7.0
-app_store,5,Nice,5,2026-04-20,18.7.0
-app_store,5,Grow app,Superb app…very easy to operate…and easy to handle…,2026-04-20,18.7.0
-app_store,5,Good,Easy to use.,2026-04-20,18.7.0
-app_store,5,Excellent,Easy to use,2026-04-20,18.7.0
-app_store,5,Go to for trading,Just the trading app a trader needs,2026-04-20,18.7.0
-app_store,5,Rakesh,Nandan,2026-04-20,18.7.0
-app_store,5,Easy,Good easy to operate,2026-04-20,18.7.0
-app_store,5,Review,Trustworthy platform to Become a good learner of market with keeping yourself always invested.,2026-04-20,18.7.0
-app_store,5,Good investment app,Good for starting your investment and trading,2026-04-20,18.7.0
-app_store,5,Simple elegant ui for mutuals,Simple elegant ui for mutuals,2026-04-20,18.7.0
-app_store,5,Make it easy,Make it easy,2026-04-20,18.7.0
-app_store,5,My experience,"Whenever someone asks me about the groww app, my first reaction is, this is an amazing app. All your needs will be met here. I personally use every part of this app and I appreciate everything about it.",2026-04-20,18.7.0
-app_store,4,Overall good,Overall good,2026-04-20,18.7.0
-app_store,5,Very nice and easy to use,nice,2026-04-20,18.7.0
-app_store,5,Excellent Financial Analysis,ಎಕ್ಸಲೆಂಟ್ ಏಪ,2026-04-20,18.7.0
-app_store,5,Easy and convenient app,Best app for trading,2026-04-20,18.7.0
-app_store,5,The best app for indian share market,Its has best ui and very fast and [REDACTED] and easy to handle,2026-04-20,18.7.0
-app_store,5,Amazing platform and [REDACTED],Best investment platform,2026-04-20,18.7.0
-app_store,5,Service,Best platform,2026-04-20,18.7.0
-app_store,5,Recommendable,Good app for stock market,2026-04-20,18.7.0
-app_store,5,High brokerage fee,Too much brokerage fee,2026-04-20,18.7.0
-app_store,5,Good,Good investment,2026-04-20,18.7.0
-app_store,5,clean and simple,"Been using the app since it launched, [REDACTED], simple & clean",2026-04-20,18.7.0
 play_store,2,,"it's brokerage charge is high even they advertised 0 % delivery charge but actually thay taken charge when you buy delivery stock and sell , even they say there charge call is 5 to 20 by grow charge but when you sell your delivery stocks they charge more then it, and other charge not included that tax and gov. charge is also add it's and your pfrofit is many time none if you investment little money",2026-04-20,18.7.1
 play_store,3,,good👍,2026-04-20,unknown
 play_store,5,,best effortlessly experience,2026-04-20,18.7.1
@@ -532,29 +375,6 @@ play_store,5,,good,2026-04-20,18.7.1
 play_store,5,,owsm for stock and share market,2026-04-20,18.7.1
 play_store,5,,Good app and [REDACTED],2026-04-20,18.7.0
 play_store,4,,very well,2026-04-20,18.7.1
-app_store,5,Best app for investment,Groww App,2026-04-19,18.7.0
-app_store,5,Good,Easy to understand and invest,2026-04-19,18.7.0
-app_store,5,Good,Good platform for new comers,2026-04-19,18.7.0
-app_store,5,Quality,Good,2026-04-19,18.7.0
-app_store,5,Investment made easy,Groww platform is easy to operate. Customer support is great.,2026-04-19,18.7.0
-app_store,5,Best [REDACTED],My life is also Groww,2026-04-19,18.7.0
-app_store,5,Best application for investment,Best application and easy to use,2026-04-19,18.7.0
-app_store,5,Good one,Excellent,2026-04-19,18.7.0
-app_store,5,GROWW REVIEW,"Fast,easy to use,nice analysis of stocks and mutual funds. Very useful for investment.",2026-04-19,18.7.0
-app_store,5,Good,Good,2026-04-19,18.7.0
-app_store,5,thanks,thanks,2026-04-19,18.7.0
-app_store,5,Excellent app for trading,Smooth and understandable,2026-04-19,18.7.0
-app_store,5,Honest review,I found Groww as the most secure money saving and making app,2026-04-19,18.7.0
-app_store,5,Nice and friendly,Very nice and friendly usage,2026-04-19,18.7.0
-app_store,5,Best,Best experience,2026-04-19,18.7.0
-app_store,5,Best UI ever,Best UI ever,2026-04-19,18.7.0
-app_store,5,Super,Excellent,2026-04-19,18.7.0
-app_store,5,Best Broker,"Best [REDACTED]
-And easy to use",2026-04-19,18.7.0
-app_store,4,Mr Krishna,Ok,2026-04-19,18.7.0
-app_store,5,Good,Nice,2026-04-19,18.7.0
-app_store,5,Accurate and smooth,Better feel,2026-04-19,18.7.0
-app_store,5,Investment,Fantastic platform for Investors,2026-04-19,18.7.0
 play_store,5,,Best Finance App,2026-04-19,18.7.1
 play_store,5,,great support for investment,2026-04-19,18.7.1
 play_store,5,,"good for trading it keeps me updated and the return data, news and everything is quite accurate so far [REDACTED] ❤️",2026-04-19,18.7.1
@@ -650,31 +470,6 @@ play_store,5,,good,2026-04-19,18.7.0
 play_store,5,,This app is so good but hidden charging and government charging so many so Very bad for any treaders,2026-04-19,18.7.0
 play_store,4,,perfect for beginners,2026-04-19,18.7.0
 play_store,5,,Good,2026-04-19,unknown
-app_store,5,Clear and transparent,My main investment app since i started investing. Happy with the experience.,2026-04-18,18.7.0
-app_store,5,Good,Fantastic,2026-04-18,18.7.0
-app_store,4,Great App,"Great app for Investment and trending.After using lot many app I found this one is more useful.
-My only suggestion is that there should be Tablets /iPad compatible App is required
-iPad specific app is still pending",2026-04-18,18.7.0
-app_store,5,Mutual Funds,Excellent and immediate execution  of orders,2026-04-18,18.7.0
-app_store,5,Impressive,Simple. Smart. Supercool,2026-04-18,18.7.0
-app_store,5,Dev,Best interface and simple to use .,2026-04-18,18.7.0
-app_store,5,Chaitali,Very nice,2026-04-18,18.7.0
-app_store,5,Good,*****,2026-04-18,18.7.0
-app_store,5,Grow [REDACTED],Grow is very [REDACTED] Mobile Application for Trading. also its Pre-Apply IPO Feature makes you one step ahead of other Application. Off Trading Hours we can book Order and they are placed easily,2026-04-18,18.7.0
-app_store,5,Sudhir Sharma,Grow is investor friendly particularly for those investors who have little or no knowledge about investing in stocks and mutual funds. The analysis of investments is helpful and provides insight into the investments vis a vis market position.,2026-04-18,18.7.0
-app_store,1,Worst app,"Worst app for trading… they buy even higher than candlea high… i have screenshots , i will send those tp sebi",2026-04-18,18.7.0
-app_store,5,Very good service and [REDACTED],"Great experience using this app. The customer service is very responsive and professional. Whenever i had a query, it was handled quickly and efficiency.",2026-04-18,18.7.0
-app_store,5,Growing with Groww,"Started investing cycle with Groww App, and dealt with equity, Mutual Fund and Bonds. Easy of processing ( both buying and selling) has been an enabling experience. Besides data analysis of portfolio has helped in planning and execution of investment strategies. Great.",2026-04-18,18.7.0
-app_store,5,SIP,Very easy to invest and track!,2026-04-18,18.7.0
-app_store,5,Hi,Good,2026-04-18,18.7.0
-app_store,4,Good,Good,2026-04-18,18.7.0
-app_store,5,Interface is good and easy to navigate,Interface is good and easy to navigate,2026-04-18,18.7.0
-app_store,5,great exp,wow,2026-04-18,18.7.0
-app_store,3,SWP Calculator,Add SWP Calculator Below SIP Calculator,2026-04-18,18.7.0
-app_store,5,MF dashboard,Excellent,2026-04-18,18.7.0
-app_store,5,"Elegant, but Simple interface!","Elegant, but Simple interface!  Apps very easy to use and manage local trades",2026-04-18,18.7.0
-app_store,5,Everest,Should improve in giving fresh position and charges on mtf should be charged by overnight wherein Groww is out of funds should be charged,2026-04-18,18.7.0
-app_store,5,Awesome,Awesome app,2026-04-18,18.7.0
 play_store,1,,3rd class adds,2026-04-18,unknown
 play_store,1,,"AMC have credited the amount in my old bank account which was freeze. I cannot access it. Despite of telling hundreds times to change my bank account, you did not. You made me do the courier 2 times for [REDACTED], but you never update my bank account. It cost me 500 rupee for courier and now 3,123 . Now [REDACTED], it's your fault.",2026-04-18,18.7.1
 play_store,5,,this app use very easy and simple. [REDACTED],2026-04-18,18.7.1
@@ -704,372 +499,3 @@ play_store,5,,nice,2026-04-18,18.7.1
 play_store,5,,good app,2026-04-18,18.6.1
 play_store,5,,very good,2026-04-18,18.7.1
 play_store,5,,good,2026-04-18,18.6.1
-play_store,1,,One Of The Worst Apps For Trading Before Reaching SL Price Automatically Sell Position Also For Buying Buy At High Price ; Don't Use It,2026-04-18,18.7.1
-play_store,5,,excellent,2026-04-18,18.7.1
-play_store,1,,good,2026-04-18,18.7.1
-play_store,4,,"I have been using the app for 3 years It is overall good. It need to improve at order execution in the intraday segment , it lags in speed execution.",2026-04-18,18.7.1
-play_store,5,,excellent 👌,2026-04-18,18.1.1
-play_store,5,,excellent 👍👌,2026-04-18,18.7.1
-play_store,5,,good,2026-04-18,18.7.1
-play_store,5,,good and easy application for market,2026-04-18,18.7.1
-play_store,5,,good,2026-04-18,18.7.1
-play_store,5,,अच्छा है,2026-04-18,18.7.0
-play_store,5,,शानदार,2026-04-18,18.7.0
-play_store,5,,very nice app,2026-04-18,18.6.1
-play_store,1,,"Don't install this app totally frustrating, once they received your money, don't take back easily, no customer support services, please don't spoil your time and mony.. 🙏",2026-04-18,18.7.0
-play_store,5,,very good 👍,2026-04-18,18.7.0
-play_store,5,,very good,2026-04-18,18.7.1
-play_store,5,,good,2026-04-18,18.7.1
-play_store,5,,[REDACTED],2026-04-18,18.7.1
-play_store,5,,well done,2026-04-18,18.7.1
-play_store,5,,good,2026-04-18,18.7.1
-play_store,5,,excellent 👍 app,2026-04-18,18.7.1
-play_store,5,,very good,2026-04-18,18.7.0
-play_store,5,,great app,2026-04-18,18.6.1
-play_store,1,,UPI section is not loading i complaint it about 5 to 6 time and many different days but It can't resolve help me 😔 that was not expected from grow.,2026-04-18,unknown
-play_store,5,,good,2026-04-18,17.95.2
-play_store,5,,Apps it's good but I have no money 😞,2026-04-18,18.7.1
-play_store,5,,nice app,2026-04-18,18.7.1
-play_store,5,,no risk,2026-04-18,unknown
-play_store,5,,good,2026-04-18,18.7.1
-play_store,5,,very good,2026-04-18,18.7.1
-play_store,4,,very good,2026-04-18,18.7.1
-play_store,5,,osam,2026-04-18,18.7.0
-play_store,5,,it's definitely good for trading,2026-04-18,18.7.1
-play_store,4,,ok,2026-04-18,18.7.0
-play_store,5,,nice application use easy,2026-04-18,18.7.1
-play_store,4,,Best Treding platform.,2026-04-18,18.7.1
-play_store,5,,Excellent Mutual fund app,2026-04-18,18.6.1
-play_store,4,,good,2026-04-18,18.7.1
-play_store,5,,very good,2026-04-18,18.7.1
-app_store,5,Great app,Great app,2026-04-17,18.7.0
-app_store,5,Good,Good,2026-04-17,18.7.0
-app_store,4,Good,Good,2026-04-17,18.7.0
-app_store,5,Sumu,Good,2026-04-17,18.7.0
-app_store,5,Easy to use,Best trading app for beginners. It’s [REDACTED] is really smooth and easy to navigate,2026-04-17,18.7.0
-app_store,5,Nice,Very [REDACTED] application for trading. Pocket investor,2026-04-17,18.7.0
-app_store,5,Great,The most [REDACTED] app,2026-04-17,18.7.0
-app_store,5,Groww will always Groww,Very easy to use and charts are very friendly to understand.,2026-04-17,18.7.0
-app_store,5,Review,Very easy to understand and easy for transactions,2026-04-17,18.7.0
-app_store,5,Nice app,"Easy to manoeuvre, and trade with useful and transparent , up to date information about the stocks !!",2026-04-17,18.7.0
-app_store,5,Great app,"Best app to invest, easy and reliable",2026-04-17,18.7.0
-app_store,5,Very easy app,Very easy to use,2026-04-17,18.7.0
-app_store,5,Feedback,It’s very simple and easy app for investing ✨,2026-04-17,18.7.0
-app_store,5,[REDACTED] interface,"Groww is an excellent trading and investment app, especially for beginners as well as experienced investors. The app interface is extremely clean, simple, and user-friendly, making investing stress-free. Opening an account is quick, and everything from stocks, mutual funds, ETFs, IPOs, and F&O is available on one platform.
-
-What I really like is the transparent pricing with zero AMC, fast order execution, and detailed stock & mutual fund information that helps in making informed decisions. The app runs smoothly without lag, and fund transfer & withdrawals are quick and hassle-free.
-
-Customer support is responsive, and regular updates keep improving the experience. Overall, Groww has made investing easy, safe, and convenient. Highly recommended for anyone serious about growing their wealth 📈",2026-04-17,18.7.0
-app_store,5,Good,It’s good,2026-04-17,18.7.0
-app_store,5,Good,5,2026-04-17,18.7.0
-app_store,5,Best app for trading,Happy user since 2021,2026-04-17,18.7.0
-app_store,4,Regarding cagr,Kindly provide cagr for porfolio in on complete basis profit and loss regarding single scrip also be provided that one shokud know total profit from intial in singke scrio,2026-04-17,18.7.0
-app_store,5,Easy trading by Groww,Very impressive service and easy to use,2026-04-17,18.7.0
-app_store,5,Great app,Very easy to use,2026-04-17,18.7.0
-app_store,5,Very easy investment,Good,2026-04-17,18.7.0
-app_store,5,Fine app,Best app,2026-04-17,18.7.0
-app_store,2,Very bad,Very bad app full of lag and glich,2026-04-17,18.7.0
-app_store,5,Best app for investing,The app has a very good ui and all features are good and easy to access. It has multiple options of investments like stocks MF’s Bonds etc.. providing all in one option,2026-04-17,18.7.0
-app_store,5,Easy to use,Good to go,2026-04-17,18.7.0
-app_store,5,Groww always grow me,Excellent,2026-04-17,18.7.0
-app_store,5,Review,Very [REDACTED] and helpful. Really informative but plz brokerage charge mat badhana.,2026-04-17,18.7.0
-app_store,5,Good experience so far!,Have been using it since last 4 years now. and these guys have made things quite simple.,2026-04-17,18.7.0
-app_store,5,Stock update,Very nice app out of 10,2026-04-17,18.7.0
-app_store,5,Excellent for trading,Very good and [REDACTED] App for trading,2026-04-17,18.7.0
-app_store,5,Great app,"Convenient, easy and seamless transactions",2026-04-17,18.7.0
-app_store,1,Withdrawal,We can not do instant withdrawals on this app nowadays,2026-04-17,18.7.0
-app_store,5,MindBogling,Extremely Well,2026-04-17,18.7.0
-app_store,5,Excellent,Excellent,2026-04-17,18.7.0
-app_store,5,Best app,Best app,2026-04-17,18.7.0
-app_store,5,Good,Good,2026-04-17,18.7.0
-app_store,5,Maharaja,[REDACTED] 3 years and [REDACTED].God bless Grow. Tum jug jug jio Maharaja,2026-04-17,18.7.0
-app_store,5,Easy to use App,I’ve been using this app for last 4 years.  It’s a wonderful app with very [REDACTED] UI. Frequent updates makes the app even better. A must try app for all those who are interested in investments.,2026-04-16,18.7.0
-app_store,5,[REDACTED] and safe,The app is [REDACTED]. Lovely [REDACTED] and safe. Gives a clear picture about different funds.,2026-04-16,18.7.0
-app_store,5,All in one,Superb,2026-04-16,18.7.0
-app_store,5,Good,Good vvvvvv,2026-04-16,18.7.0
-app_store,5,Nice,Excellent,2026-04-16,18.7.0
-app_store,5,Very cool,Much efficient,2026-04-16,18.7.0
-app_store,5,Trading,Best trading app. It was very easy and accurate chart.,2026-04-16,18.7.0
-app_store,4,Good App For Trading,Interface is good for trading,2026-04-16,18.7.0
-app_store,5,My Opinion,"Groww is [REDACTED] app with details about stock, company s performance, intuitive [REDACTED].",2026-04-16,18.7.0
-app_store,5,Very cool,isse accha app nahi milega,2026-04-16,18.7.0
-app_store,5,Grow your goal,Very profitable,2026-04-16,18.7.0
-app_store,4,Groww,Outstanding,2026-04-16,18.7.0
-app_store,5,[REDACTED],"Very [REDACTED] interface, amazing features and fast execution.",2026-04-16,18.7.0
-app_store,5,Good,Good,2026-04-16,18.7.0
-app_store,5,Excellent,Excellent,2026-04-16,18.7.0
-app_store,4,Black Tiger 09,Nice,2026-04-16,18.7.0
-app_store,5,All the info at one place,"I’m so comfortable using Groww app. It’s so cool, informative, getting time to time notifications and very easy to use.",2026-04-16,18.7.0
-app_store,5,Good,Good,2026-04-16,18.7.0
-app_store,5,Amazing experience,Amazing experience,2026-04-16,18.7.0
-app_store,1,Only groww funds,There should be an option to see only funds purchased from groww. I Don’t want to track other funds in your app.,2026-04-16,18.7.0
-app_store,5,Simple and easy,Nice app,2026-04-16,18.7.0
-app_store,3,Tax,Tax are so high,2026-04-16,18.7.0
-app_store,5,Goo experience,Best part of this app is the [REDACTED] and ease of use,2026-04-16,18.7.0
-app_store,1,iPad UI correction,"It seems the ui for iPad is not responsive at all, It creates huge confusion when we are looking for charts. kindly fix it ASAP as it is there in Android tabs already.",2026-04-16,18.7.0
-app_store,5,Best trading app,Very easy to use,2026-04-16,18.7.0
-app_store,5,Mr,Very good,2026-04-16,18.7.0
-app_store,5,Easy se bhi easy,5 star,2026-04-16,18.7.0
-app_store,5,Good,One of the best app for trading,2026-04-16,18.7.0
-app_store,5,Easy to use,Simple and easy to use app.,2026-04-16,18.7.0
-app_store,5,Best,Best,2026-04-16,18.7.0
-app_store,5,The,Re,2026-04-16,18.7.0
-app_store,5,best investment app,good app,2026-04-16,18.7.0
-app_store,5,Rating,Good experience,2026-04-16,18.7.0
-app_store,5,Great UI,Has lot to catch up to zerodha in terms of features,2026-04-16,18.7.0
-app_store,5,Quick and presice,Almost all in one and simple to use app to keep up with the market. We don't need anything else.,2026-04-16,18.7.0
-app_store,5,Great for instant updation,Great can be better but lacking in MF fumdamentals and detailed analysis of funds for which we need to switch to other sources. Think seriously and make good adition to make this great.,2026-04-16,18.7.0
-app_store,5,Excellent,The application has good features,2026-04-16,18.7.0
-app_store,5,Good,"Good app . Clean and precise.
-Shows fundamental of funds.",2026-04-16,18.7.0
-app_store,5,Nice,Nice & Easy,2026-04-16,18.7.0
-app_store,5,Excellent,Excellent,2026-04-16,18.7.0
-app_store,4,Review,Overall app is good and has a very simple ui and can be navigated by any user. The ncd bonds tracking are been not properly tracked in the application. If they can fix this part which will be really helpful to track all the investment,2026-04-16,18.7.0
-app_store,5,good,good and easy app,2026-04-16,18.7.0
-app_store,5,Wonderful,Really easy sip app!!,2026-04-16,18.7.0
-app_store,5,All,Very trustable this app,2026-04-16,18.7.0
-app_store,5,Features,Its a bunch of features platform where you each type of investment and trading features.,2026-04-16,18.7.0
-app_store,5,Amit,Good for starters,2026-04-16,18.7.0
-app_store,5,Good app,I found,2026-04-16,18.7.0
-app_store,5,Good,Its feel good to grow with groww,2026-04-16,18.7.0
-app_store,5,Grow worth Groww,Absolutely loving the experience since 2020. Need some goodies like initial years 😁,2026-04-16,18.7.0
-app_store,5,[REDACTED] interface and much easy to use as compare to other application,[REDACTED] interface and much easy to use as compare to other application,2026-04-16,18.7.0
-app_store,5,👌🏻👌🏻,👌🏻👌🏻👏🏻,2026-04-16,18.7.0
-app_store,5,Excellent,Easy to use app..,2026-04-16,18.7.0
-app_store,5,Groww,Very [REDACTED] and smooth to use 👍,2026-04-16,18.7.0
-app_store,5,I love growwwwwwwwwwwwww,Just growww,2026-04-16,18.7.0
-app_store,3,Watchlist are not saving in Alphabetical sorted order,"Watchlist are not saving in Alphabetical sorted order. 
-Even though we tried to sort list of stocks in our watchlist it’s not saving that sorted order",2026-04-16,18.7.0
-app_store,5,Make our Indian individual wealthy through Groww,Love the app,2026-04-16,18.7.0
-app_store,5,Great,"Best app 
-Easy to open and oprate",2026-04-16,18.7.0
-app_store,5,Nice,Super,2026-04-16,18.7.0
-app_store,1,"Good app, but payment processing is world top slowest","Very good app, when we deposit any payment or withdraw any payment. It will take 3-4 days or some time more than that. 
-For withdrawal i can understand, you people take 3 odd days to reflect the payment in my groww app, 
-Need to be seen and i need solutions for that 
-In thins era we are doing thing like 70-80 speed",2026-04-16,18.7.0
-app_store,5,Samarth,Amazing App… Easy to use compared to all other apps.,2026-04-16,18.7.0
-app_store,5,Option,Nice work,2026-04-16,18.7.0
-app_store,5,Good,Easy to access,2026-04-16,18.7.0
-app_store,5,Good to use,[REDACTED] app,2026-04-16,18.7.0
-app_store,5,Earn & Enjoy using this,Kindly learn & invest wisely. You’ll enjoy using this App also earn.,2026-04-16,18.7.0
-app_store,5,One of the easiest stocks and MF app I have come across,Extremely [REDACTED],2026-04-16,18.7.0
-app_store,5,Good app,Nicely programmed and oriented,2026-04-16,18.7.0
-app_store,5,Good for all.,Great app,2026-04-16,18.7.0
-app_store,5,Let’s grow,Very [REDACTED] and my max used application in my phone 😊,2026-04-16,18.7.0
-app_store,5,Best NRI INVESTMENT app,Partner for better future🫶🏻👑,2026-04-16,18.7.0
-app_store,5,So helpful nice app,Very nice easy friendly,2026-04-16,18.7.0
-app_store,5,Excellent Plat  form,Excellent,2026-04-16,18.7.0
-app_store,1,Fraud app,I funded 38000 but not showing anywhere,2026-04-16,18.7.0
-app_store,5,Excellent app,Excellent,2026-04-16,18.7.0
-app_store,5,Great app,Great app,2026-04-16,18.7.0
-app_store,5,Growing,Helping in growing my Wealth. Ease of doing equity and other market instrument .,2026-04-16,18.7.0
-app_store,4,Flawless App,It is super smooth,2026-04-15,18.7.0
-app_store,5,Great app for investing,I loved this app using it from past 5 years,2026-04-15,18.7.0
-app_store,5,Remove Loan segment,Please remove the loan segment as it looks very weird and kindly consider this as an investment tool. Not a loan app. Though you have a separate dedicated app for loans.,2026-04-15,18.7.0
-app_store,5,lol,lol,2026-04-15,18.7.0
-app_store,5,Simple to invest,Very simple app for anyone to invest,2026-04-15,18.7.0
-app_store,5,It is very trusted,Good experience and very useful,2026-04-15,18.7.0
-app_store,5,Information,Good,2026-04-15,18.7.0
-app_store,5,Excellent for Investements,Groww is a fantastic app with [REDACTED] navigation and a very easy app for investments.,2026-04-15,18.7.0
-app_store,5,Very helpful,Amazing app,2026-04-15,18.7.0
-app_store,5,Nice,Nice,2026-04-15,18.7.0
-app_store,5,Rishi,by the Sema Ne kiya Hai Bas Ma Jara Hai Binna tension Ke,2026-04-15,18.7.0
-app_store,5,Satisfied,Best for Investment,2026-04-15,18.7.0
-app_store,5,Best,Best ever,2026-04-15,18.7.0
-app_store,5,Best app for stocks & MF,Very convenient and easy to operate …friendly [REDACTED],2026-04-15,18.7.0
-app_store,5,Signing in,Signing in process is very smooth compared to any other apps,2026-04-15,18.7.0
-app_store,5,Fantastic App,Very Good,2026-04-15,18.7.0
-app_store,5,Very good,[REDACTED] 2020 its performance is awesome,2026-04-15,18.7.0
-app_store,5,Best for investing,Best,2026-04-15,18.7.0
-app_store,5,Konduru Srinivasulu,Garudasri.Pasupati,2026-04-15,18.7.0
-app_store,5,Easy to use,I’ve never seen trading app like Groww🔱,2026-04-15,18.7.0
-app_store,4,[REDACTED],Reliable,2026-04-15,18.7.0
-app_store,5,Smooth,Really good to work on it.,2026-04-15,18.7.0
-app_store,5,Nice & easy,Easiest and elegant app ever,2026-04-15,18.7.0
-app_store,4,Ui,Do fix ui in groww like when click on watchlist so directly starting position show but right now not show manually go up fix it this,2026-04-15,18.7.0
-app_store,5,Bestest trading application.,Best application for trading and investment.,2026-04-15,18.7.0
-app_store,3,App functionality,Please have a provision to clear old notifications,2026-04-15,18.7.0
-app_store,5,Good,10,2026-04-15,18.7.0
-app_store,5,All,Good,2026-04-15,18.7.0
-app_store,5,Good platform,"Its very easy to use , good interface for beginners",2026-04-15,18.7.0
-app_store,5,Make money with Groww,🫵,2026-04-15,18.7.0
-app_store,5,Easy to access,soo easy to operate or access to grow up ur money,2026-04-15,18.7.0
-app_store,5,Everything is amazing,In punjabi say…. Sirra hi aa,2026-04-15,18.7.0
-app_store,5,Geart UI for a trading app,Amazing app with great simple UI . Nothing more required.,2026-04-15,18.7.0
-app_store,5,Super,Ek no,2026-04-15,18.7.0
-app_store,5,Excellent,Easy to use,2026-04-15,18.7.0
-app_store,5,Badiya aap hai,Investing aasaan bana diya hai is app ne download kr skte ho,2026-04-15,18.7.0
-app_store,5,VINOD HALLAN,Excellent,2026-04-15,18.7.0
-app_store,5,It’s clean,"Thank you. But I’ve observed this, the values of the investment, sometimes weird and gets fixed on its own the next day when trading starts. Hope that’s fixed in this update as well.",2026-04-15,18.7.0
-app_store,5,Great experience,Thousand star rating app,2026-04-15,18.7.0
-app_store,5,Supereb app for treding,Nice,2026-04-15,18.7.0
-app_store,5,Stocks,Mutual,2026-04-15,18.6.0
-app_store,5,Good,Good,2026-04-15,18.7.0
-app_store,5,Market,Good,2026-04-15,18.6.0
-app_store,5,Brilliant UI,"One and only investment app required. Clean, simple, does the job !",2026-04-15,18.7.0
-app_store,5,The best app for investment,"The best app i have ever use, my first aap that [REDACTED] 7 years
-The complete & seamless experince, thankyou groww",2026-04-15,18.7.0
-app_store,5,Go GROWW,Good app,2026-04-15,18.7.0
-app_store,1,Delay,Every time I try to withdraw it delays a lot,2026-04-15,18.7.0
-app_store,5,Nice [REDACTED] but charges are high,Charges are high,2026-04-15,18.7.0
-app_store,5,Appreciate,Awesome,2026-04-15,18.7.0
-app_store,5,Amazing,Please provide tips and tricks for trading and investment purposes,2026-04-15,18.7.0
-app_store,5,Good experience,Grow is use easygoing,2026-04-15,18.7.0
-app_store,5,Good,5 star,2026-04-15,18.7.0
-app_store,5,Easiest UI trading app,Nice,2026-04-15,18.7.0
-app_store,5,Super,Groww the unmatched experience,2026-04-15,18.7.0
-app_store,5,Superb Trading Application,Nice and fast,2026-04-15,18.7.0
-app_store,5,Very issue to use,Suggestions on stocks are also good and helpful,2026-04-15,18.7.0
-app_store,5,Best app,Fast and easy and informative and convenient and so on. This is the only app I use,2026-04-15,18.7.0
-app_store,5,Super,Nice app,2026-04-15,18.7.0
-app_store,3,[REDACTED],Fundamentally good,2026-04-15,18.7.0
-app_store,5,Grow supereb,Very friendly,2026-04-15,18.7.0
-app_store,5,Groww App,Very useful and supportive app for each new or old trader.,2026-04-15,18.7.0
-app_store,5,All in one,Completely satisfied.,2026-04-15,18.7.0
-app_store,5,Easy and Convenient,"With simple onboarding, clutter-free interface and unified dashboard the app’s very easy and convenient for beginners to use. The UI is designed to be non-technical and ""non-scary”, making it easy for laypeople like me to start their investment journey. It gives us educational support like eBooks, blogs, and YouTube tutorials to teach stock market basics. It also provides essential line and candlestick charts, historical financials, and analyst ratings for quick evaluation. For beginners like me, its a perfect app.",2026-04-15,18.7.0
-app_store,5,👍👍👍👍,Nice app,2026-04-15,18.7.0
-app_store,5,Good aap,Good to understand,2026-04-15,18.7.0
-app_store,5,Better than rest,As of 5 years of experience i find Groww app as most simple trading app,2026-04-15,18.7.0
-app_store,5,Very useful app,My all investment in this app,2026-04-15,18.7.0
-app_store,5,Better,Nice,2026-04-15,18.7.0
-app_store,5,Good,5,2026-04-15,18.6.0
-app_store,5,Good,Very Good,2026-04-14,18.7.0
-app_store,4,No Widgets,"Hi developers, kindly add widgets where we can track one of our wish lists please",2026-04-14,18.7.0
-app_store,5,Keep growing,All fine,2026-04-14,18.7.0
-app_store,5,Easy to use,Very useful,2026-04-14,18.7.0
-app_store,5,Great app,Easy to use for beginners,2026-04-14,18.7.0
-app_store,5,Nice,Good,2026-04-14,18.7.0
-app_store,5,Excellent,Good,2026-04-14,18.7.0
-app_store,5,Grow,Great,2026-04-14,18.6.0
-app_store,5,Good,Super excited,2026-04-14,18.7.0
-app_store,4,Ease of operating,Very nice,2026-04-14,18.7.0
-app_store,5,Nice,Excellent,2026-04-14,18.7.0
-app_store,5,Groww AppFont Size,Please work on the app font size It is too small. Other than that everything is awesome,2026-04-14,18.7.0
-app_store,5,[REDACTED],Groww is super [REDACTED] and reliable for beginners as well as expert investors. Thank you,2026-04-14,18.6.0
-app_store,5,For a cause,If you want to donate some big amount of money this is the plateform,2026-04-14,18.7.0
-app_store,5,NIC,Super,2026-04-14,18.6.0
-app_store,5,Very good app,UI and performance is very good.,2026-04-14,18.7.0
-app_store,4,Great app,Excellent app for investing sometimes glitches happens,2026-04-14,18.7.0
-app_store,5,Sportan,Good,2026-04-14,18.6.0
-app_store,5,Great app,Easy to use,2026-04-14,18.6.0
-app_store,5,Groww,Very good,2026-04-14,18.7.0
-app_store,5,[REDACTED] App,Very easy to access I love it ❤️ Lovely 🥰,2026-04-14,18.7.0
-app_store,5,Review,"Excellent app , target price should be updated",2026-04-14,18.6.0
-app_store,5,Good App,The overall experience is smooth and easy to understand,2026-04-14,18.7.0
-app_store,5,Review,Most informative and easy to operate app.👍,2026-04-14,18.6.0
-app_store,5,MF PREVIOUS IS BETTER THAN NOW,Dashboard update PREVIOUS IS BETTER THAN NOW,2026-04-14,18.7.0
-app_store,5,Goood and good and great,This is a life changer and solid as Diamond,2026-04-14,18.6.0
-app_store,3,Okay,"Charges should be less, platform is good, simple ui",2026-04-14,18.7.0
-app_store,5,One of the best app for trading,Easy to use,2026-04-14,18.6.0
-app_store,5,Fast,Super Groww fast,2026-04-14,18.7.0
-app_store,5,Very good,Good,2026-04-14,18.6.0
-app_store,5,Excellent performance,Super,2026-04-14,18.7.0
-app_store,5,Specially thanks for the mutual fund,The grow aap is very helpful for the mutual fund mostly this is the provided  lower tax and multiple companies for the investment and very easy process  sale and buy,2026-04-14,18.7.0
-app_store,5,Best,Ash,2026-04-14,18.6.0
-app_store,5,For ios,Plzzz add scalping mode for ios,2026-04-14,18.7.0
-app_store,5,Digital Money Plant,Reliable money multiplier,2026-04-14,18.7.0
-app_store,5,Investment,Good platform for investment.,2026-04-14,18.7.0
-app_store,5,Review,Very good and intuitive app design and very easy to use.,2026-04-13,18.7.0
-app_store,5,Great app,Easy to access and explore,2026-04-13,18.6.0
-app_store,4,Good,Good,2026-04-13,18.6.0
-app_store,5,Amazing app,[REDACTED],2026-04-13,18.6.0
-app_store,5,Ravi,I like,2026-04-13,18.6.0
-app_store,5,Best for investment,Seamless experience,2026-04-13,18.7.0
-app_store,5,Superb,Good broker,2026-04-13,18.7.0
-app_store,5,Great app,My Best and fav app,2026-04-13,18.7.0
-app_store,5,Superb app,Very easy and simple app to use,2026-04-13,18.6.0
-app_store,5,Excellent app .. for life grow,Nice transperecy,2026-04-13,18.7.0
-app_store,5,Excellent…!,Easy..!,2026-04-13,18.6.0
-app_store,5,Good experience,Easy to invest good app,2026-04-13,18.6.0
-app_store,4,Really great app for investment,"Just a quick feedback my few off friends received a grow Tshirt and some goodies, where in i use more than them and invested more than them, I didn’t received any goodies 😔",2026-04-13,18.7.0
-app_store,5,Good,Best,2026-04-13,18.7.0
-app_store,5,Good,Best,2026-04-13,18.6.0
-app_store,1,Reduce Brokerage Charges,"Your Brokerage Charges are Higher than our Profits, Reduce Charges.",2026-04-13,18.7.0
-app_store,5,Lagging issues,"Just wanted to inform the grow team 
-The speed is slow compared to other platforms like zeroda up stock etc.",2026-04-13,18.6.0
-app_store,5,Good,Good,2026-04-13,18.6.0
-app_store,1,Worst app,Worst app for trading it takes 30 RS for every trade exchange ! Not worth downloading,2026-04-13,18.7.0
-app_store,5,Superb,5 star,2026-04-13,18.6.0
-app_store,5,Great experience & helpful,Very easy to handel and understand.,2026-04-13,18.6.0
-app_store,5,Great interface,"Easy to use this application.
-Nice interface!",2026-04-13,18.7.0
-app_store,5,Groww,"Amazing experience, [REDACTED] interface",2026-04-13,18.6.0
-app_store,5,Simple and great experience,"The Groww [REDACTED] process was quick, simple, and well-structured. Great experience",2026-04-13,18.7.0
-app_store,5,Good and simple [REDACTED],"Very east to use , all option arr in one single screen",2026-04-13,18.7.0
-app_store,5,Happy Investor,"Finally found an app that makes SIPs feel effortless, you can start with just 500. The UI is incredibly intuitive—I was able to complete my KYC and start my first fund in under 10 minutes. Plus, zero commission on direct funds means more money stays in my pocket. Highly recommend for anyone starting their wealth journey.",2026-04-13,18.6.0
-app_store,5,Great UI,Smooth and seamless UI & UX,2026-04-13,18.7.0
-app_store,5,Compatible & fast !,Working Smooth !,2026-04-13,18.7.0
-app_store,5,Good,five star,2026-04-13,18.7.0
-app_store,5,Ajm,Nice,2026-04-13,18.7.0
-app_store,5,[REDACTED],It’s so easy to look for shares and buy and sell and see companies details .,2026-04-13,18.6.0
-app_store,5,Great App,"I enjoyed using the app for its ease of use, great insights. Of course, the daily and weekly newsletter are other benefits, besides the low fees. Very intuitive app.",2026-04-13,18.6.0
-app_store,4,Good,Usere friendly app,2026-04-13,18.6.0
-app_store,5,Great,The ui is [REDACTED] and feat like using an genuine app with no amc fees,2026-04-13,18.6.0
-app_store,5,Nice app,Nice app,2026-04-13,18.6.0
-app_store,1,Worst app,"The worst trading app I have ever seen. It is completely unreliable and not fit for trading, so please stay away and do not waste your time or money on this disaster.",2026-04-13,18.7.0
-app_store,5,Good app,Good app to buy shares and so all with a good [REDACTED],2026-04-13,18.7.0
-app_store,5,Amazing..,Easy to use & understand..,2026-04-13,18.6.0
-app_store,1,Interface for ipads,"The app really needs a proper interface designed specifically for iPad. Right now, it is quite difficult and uncomfortable to use on a larger screen. The layout does not feel optimized, and many elements seem stretched or poorly aligned, which affects usability.
-
-Navigation can also be confusing at times, and simple tasks take more effort than they should. An iPad-friendly interface with better spacing, improved responsiveness, and optimized controls would make a big difference in the overall [REDACTED].
-
-I hope the developers consider adding a dedicated iPad interface in future updates, as it would greatly improve accessibility and ease of use.",2026-04-13,18.7.0
-app_store,5,Growing with Groww,Best app,2026-04-13,18.7.0
-app_store,5,Kishor,Very wonderful [REDACTED] UX design of App,2026-04-13,18.7.0
-app_store,5,Nice,Very good,2026-04-13,18.7.0
-app_store,5,Good,Good,2026-04-13,18.6.0
-app_store,5,Good performance,Satisfied Service,2026-04-13,18.7.0
-app_store,5,"Simple, Smart & Actually Helpful for Beginners","Ive been using Groww for a while now, and honestly, its one of the easiest investing apps Ive come across. The interface is super clean and not confusing at all, which really helped me when I was just starting out with mutual funds and stocks.
-What I like most is how straightforward everything feels — from KYC to making your first investment, the whole process is smooth and doesnt feel overwhelming. The app also provides basic explanations and insights, which are useful if you’re still learning the ropes.
-That said, theres still room for improvement. Sometimes the app can lag a bit during peak market hours, and I wish they had more advanced tools for experienced investors. But for beginners and even intermediate users, it does the job really well.
-Overall, Groww is a sol[REDACTED] if you want a no-nonsense, user-friendly platform to start your investment journey without getting lost in complicated features.",2026-04-13,18.7.0
-app_store,5,Moni- Hardi,Best App,2026-04-13,18.7.0
-app_store,5,Advice,Comfortable aap,2026-04-13,18.7.0
-app_store,5,Platform thats so easy to use,An excellent platform so easy to use .,2026-04-13,18.7.0
-app_store,5,Easy,Very easy to Operate,2026-04-13,18.6.0
-app_store,5,Supar app,Supar app,2026-04-13,18.6.0
-app_store,4,Good,"4 star for the facility we are getting, more better can be done. If we can place order , sl, in chart could hold a 1 star more. Looking forward for more good updates.",2026-04-13,18.6.0
-app_store,5,Incredible App !!,Amazingly reliable and very intuitive App. Great investing platform,2026-04-13,18.7.0
-app_store,5,Good,Servise,2026-04-13,18.6.0
-app_store,5,Always Grow,"👌👌👌👌👌👌 I Lived it
-Always 😍✌️",2026-04-13,18.7.0
-app_store,5,great app,best app,2026-04-13,18.6.0
-app_store,5,A,It’s Simply Awsome,2026-04-13,18.7.0
-app_store,5,Groww,Easy to use tradings app and easy to understand the graphs and all,2026-04-12,18.7.0
-app_store,5,GREAT EXPERIENCE AND SMOOTH APP,i have been using this app from last 6 years .. it always amaze with latest updates .. very good and smooth experience,2026-04-12,18.6.0
-app_store,5,Groww,"everything is so systematically created in this app that even a small child could handle it. SIP investment in stocks news about that dividend to see portfolio, everything is graded with us so good manner. That we never needed, anyone helps to sort anything out. Everything is so good and easy.",2026-04-12,18.7.0
-app_store,5,Good,Very good,2026-04-12,18.6.0
-app_store,5,Very good app,A more comfortable App,2026-04-12,18.7.0
-app_store,5,Good,Nice,2026-04-12,18.6.0
-app_store,5,good servises,good,2026-04-12,18.7.0
-app_store,1,Transaction Marked Successful but Funds Not Credited – Poor Communication and Support,"I had a very disappointing experience with Groww. I redeemed my mutual fund investment, and the status showed as “successful,” but the amount was not credited to my bank account.
-
-After multiple follow-ups from my side, I was informed that there was an issue with the IFSC code not matching. If that was the case, why was the transaction marked as successful in the first place? This is a serious flaw in the system.
-
-What’s more frustrating is that I had to chase the support team to even find out the reason. Without my follow-up, I would have been left completely unaware of the issue. This lack of proactive communication and transparency is unacceptable, especially when it involves customers’ money.
-
-I expected a much more reliable and responsive service from Groww. This experience has definitely affected my trust in the platform.",2026-04-12,18.7.0
-app_store,5,Nice,Good,2026-04-12,18.7.0
-app_store,5,Super easy,"I found this app super easy to use, learn and access. Also it is very informative suggesting you with multiple investment options and easy to begin with any investment.",2026-04-12,18.6.0
-app_store,5,Awesome,Fabulous,2026-04-12,18.6.0
-app_store,1,Very bad service,"Very bad service, this app is
-Withdraw long time processing apps, not for😹😹😪",2026-04-12,18.7.0
-app_store,5,Great,It’s so simple and impeccable!,2026-04-12,18.6.0
-app_store,5,Groww is best,Very nice application,2026-04-12,18.6.0
-app_store,5,Best,Invest,2026-04-12,18.6.0
-app_store,5,Great driving interface for my portfolio,"Best in the class, beginner friendly and very futuristic application.. want to recommend all new comers to use groww for better analysis of your SIP and stocks portfolios.",2026-04-12,18.7.0
-app_store,5,Janak khambhati,It is very Easy and Fast Groww App,2026-04-12,18.7.0
-app_store,5,All is Good,All is Good,2026-04-12,18.7.0
-app_store,5,Commendable,Wonderful app and very [REDACTED],2026-04-12,18.6.0
-app_store,5,Good,Simple professional application,2026-04-12,18.6.0
-app_store,5,Gud,Gud,2026-04-11,17.98.0
-app_store,5,Best,Go for it,2026-04-11,18.7.0
-app_store,5,Good application,Good app & informative,2026-04-11,18.7.0
-app_store,5,Shravan,Verry nice,2026-04-11,18.6.0
-app_store,5,Very nice,Very good,2026-04-11,18.7.0
-app_store,5,Good,Very useful for Beginners.,2026-04-11,18.6.0
-app_store,5,Best trading application,Very transparent and easy to use,2026-04-11,18.7.0
-app_store,5,Best app for everyone,[REDACTED],2026-04-11,18.7.0
-app_store,5,Good,Good,2026-04-11,18.6.0
-app_store,5,Good app,👍,2026-04-11,18.7.0

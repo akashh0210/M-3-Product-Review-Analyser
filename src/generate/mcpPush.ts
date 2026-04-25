@@ -10,23 +10,23 @@ export async function mcpPush(
   emailDraft: string,
   dateRange: { from: string; to: string }
 ): Promise<void> {
-  const mcpEnabled = config.googleDocId || config.enableGmailSend;
+  const mcpEnabled = config.mcpServerUrl && (config.googleDocId || config.enableGmailSend);
   if (!mcpEnabled) {
-    console.log('\n⏩ MCP push skipped (not configured)');
+    console.log('\n⏩ Hosted MCP push skipped (MCP_SERVER_URL not configured)');
     return;
   }
 
-  console.log('\n🔌 Stage 6: MCP Push');
+  const serverUrl = config.mcpServerUrl!;
+  console.log('\n🔌 Stage 6: Hosted MCP Push');
 
   // 1. Google Docs
   if (config.googleDocId) {
     try {
       console.log(`📑 Appending to Google Doc: ${config.googleDocId}...`);
       const result = await appendToGoogleDoc(
+        serverUrl,
         config.googleDocId,
-        weeklyNote,
-        config.googleCredentialsPath,
-        config.googleTokenPath
+        weeklyNote
       );
       if (result.success) {
         console.log(`✅ Appended ${result.insertedTextLength} characters to Google Doc`);
@@ -44,11 +44,10 @@ export async function mcpPush(
       const subject = `Weekly App Review Pulse — ${config.productName} (${dateRange.from} to ${dateRange.to})`;
       console.log(`📧 Sending email to: ${config.gmailRecipients.join(', ')}...`);
       const result = await sendGmail(
+        serverUrl,
         config.gmailRecipients,
         subject,
-        emailDraft,
-        config.googleCredentialsPath,
-        config.googleTokenPath
+        emailDraft
       );
       if (result.success) {
         console.log(`✅ Email sent successfully (ID: ${result.messageId})`);

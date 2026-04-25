@@ -10,6 +10,7 @@ import { selectQuotesAndActions } from './process/quoteSelector.js';
 import { generateWeeklyNote } from './generate/weeklyNote.js';
 import { generateEmailDraft } from './generate/emailDraft.js';
 import { mcpPush } from './generate/mcpPush.js';
+import { checkMcpHealth } from './utils/mcp.js';
 
 async function main() {
   const startTime = Date.now();
@@ -19,6 +20,17 @@ async function main() {
     // 1. Config
     const config = getConfig();
     console.log(`✅ Config loaded for ${config.productName}`);
+
+    // 1.1 MCP Health Check
+    if (config.mcpServerUrl) {
+      console.log('📡 Checking Hosted MCP server health...');
+      const isHealthy = await checkMcpHealth(config.mcpServerUrl);
+      if (isHealthy) {
+        console.log('✅ Hosted MCP server is online');
+      } else {
+        console.warn('⚠️ Hosted MCP server is unreachable. Stage 6 will be skipped.');
+      }
+    }
 
     // 2. Fetch
     await ensureDir('data/raw');

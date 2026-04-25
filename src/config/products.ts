@@ -14,8 +14,7 @@ export interface PipelineConfig {
   googleDocId?: string;
   enableGmailSend: boolean;
   gmailRecipients: string[];
-  googleCredentialsPath: string;
-  googleTokenPath: string;
+  mcpServerUrl?: string;
 }
 
 export function getConfig(): PipelineConfig {
@@ -35,7 +34,7 @@ export function getConfig(): PipelineConfig {
 
   return {
     productName: process.env.PRODUCT_NAME || 'Groww',
-    appStoreId: process.env.APP_STORE_ID || '1404684361',
+    appStoreId: process.env.APP_STORE_ID || '1404871703',
     playStorePackage: process.env.PLAY_STORE_PACKAGE || 'com.nextbillion.groww',
     reviewWindowWeeks: parseInt(process.env.REVIEW_WINDOW_WEEKS || '12', 10),
     maxThemes: parseInt(process.env.MAX_THEMES || '5', 10),
@@ -45,7 +44,6 @@ export function getConfig(): PipelineConfig {
     googleDocId: process.env.GOOGLE_DOC_ID || undefined,
     enableGmailSend,
     gmailRecipients,
-    googleCredentialsPath: process.env.GOOGLE_CREDENTIALS_PATH || './credentials.json',
-    googleTokenPath: process.env.GOOGLE_TOKEN_PATH || './token.json',
+    mcpServerUrl: process.env.MCP_SERVER_URL || undefined,
   };
 }
