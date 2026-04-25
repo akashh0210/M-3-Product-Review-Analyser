@@ -248,8 +248,41 @@ with tab_draft:
     st.subheader("Stakeholder Email Draft")
     email = fetch_github_file("output/email-draft.md")
     if email:
-        st.markdown(f"<div style='background-color:#161b22; padding:32px; border-radius:8px; border:1px solid #30363d; font-family:monospace;'>{email}</div>", unsafe_allow_html=True)
+        # Action Bar for Draft Generation
+        col_draft1, col_draft2 = st.columns([1, 1])
+        
+        with col_draft1:
+            if st.button("Generate Live Gmail Draft", use_container_width=True):
+                with st.spinner("Communicating with Gmail API..."):
+                    # Basic parsing of the markdown content
+                    lines = email.split('\n')
+                    subject = "Weekly App Review Pulse"
+                    recipients = os.getenv("GMAIL_RECIPIENTS", "product-team@groww.in")
+                    
+                    for line in lines:
+                        if "**Subject:**" in line:
+                            subject = line.replace("**Subject:**", "").strip()
+                    
+                    # Call local FastAPI bridge
+                    try:
+                        payload = {
+                            "to": recipients,
+                            "subject": subject,
+                            "body": email
+                        }
+                        res = requests.post("http://localhost:8000/create_email_draft", json=payload, timeout=15)
+                        if res.status_code == 200:
+                            st.toast("Draft Created Successfully!", icon="✅")
+                            st.success("Draft is now waiting in your Gmail 'Drafts' folder.")
+                        else:
+                            st.error(f"Failed to create draft: {res.text}")
+                    except Exception as e:
+                        st.error(f"Connection Error: Ensure FastAPI bridge is running. ({str(e)})")
+        
+        with col_draft2:
+            st.link_button("Open Gmail Drafts Folder", "https://mail.google.com/mail/u/0/#drafts", use_container_width=True)
+
         st.markdown("<br>", unsafe_allow_html=True)
-        st.link_button("Access Gmail Drafts Folder", "https://mail.google.com/mail/u/0/#drafts")
+        st.markdown(f"<div style='background-color:#161b22; padding:32px; border-radius:8px; border:1px solid #30363d; font-family:monospace;'>{email}</div>", unsafe_allow_html=True)
     else:
         st.info("Communication draft not available.")
