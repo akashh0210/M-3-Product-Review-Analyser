@@ -6,3 +6,4 @@ data/raw/
 *.log
 credentials.json
 token.json
+**/__pycache__/
