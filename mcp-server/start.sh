@@ -1,12 +1,20 @@
 #!/bin/bash
+set -e
 
-# Start FastAPI server on a background port
-echo "🚀 Starting FastAPI Backend on port 8000..."
+echo "Starting FastAPI Backend on port 8000..."
 uvicorn server:app --host 0.0.0.0 --port 8000 &
+FASTAPI_PID=$!
 
-# Wait for backend to initialize
-sleep 5
+sleep 3
 
-# Start Streamlit dashboard on the primary Hugging Face port
-echo "📊 Starting Streamlit Dashboard on port 7860..."
-streamlit run dashboard.py --server.port 7860 --server.address 0.0.0.0 --server.headless true
+if ! kill -0 $FASTAPI_PID 2>/dev/null; then
+    echo "FastAPI failed to start!"
+    exit 1
+fi
+
+echo "Starting Streamlit Dashboard on port 7860..."
+streamlit run dashboard.py \
+    --server.port 7860 \
+    --server.address 0.0.0.0 \
+    --server.headless true \
+    --browser.gatherUsageStats false

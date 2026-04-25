@@ -36,7 +36,12 @@ jobs:
           PLAY_STORE_PACKAGE: ${{ vars.PLAY_STORE_PACKAGE || 'com.nextbillion.groww' }}
           REVIEW_WINDOW_WEEKS: ${{ vars.REVIEW_WINDOW_WEEKS || '12' }}
           MAX_THEMES: ${{ vars.MAX_THEMES || '5' }}
-          # MCP credentials skipped in CI as they require interactive auth
+          # Hosted MCP Bridge (Google Docs + Gmail delivery)
+          MCP_SERVER_URL: ${{ secrets.MCP_SERVER_URL }}
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          GOOGLE_DOC_ID: ${{ vars.GOOGLE_DOC_ID || '1lEv0CfmaeMp0hdLeljRQ2XHdcS46WQjtBjIwtgC0rmM' }}
+          ENABLE_GMAIL_SEND: ${{ vars.ENABLE_GMAIL_SEND || 'true' }}
+          GMAIL_RECIPIENTS: ${{ vars.GMAIL_RECIPIENTS || 'akash102502@gmail.com' }}
         run: npm run run
 
       - name: Commit and Push Results
