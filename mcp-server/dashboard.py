@@ -89,14 +89,15 @@ with col1:
     st.markdown('<div class="status-box">', unsafe_allow_html=True)
     st.subheader("📡 MCP Health")
     try:
-        res = requests.get(f"{mcp_url}/", timeout=5)
+        # Check local backend first
+        res = requests.get("http://localhost:8000/", timeout=5)
         if res.status_code == 200:
-            st.success("Online")
+            st.success("Backend: Online")
             st.json(res.json())
         else:
-            st.error(f"Error: {res.status_code}")
+            st.error(f"Backend Error: {res.status_code}")
     except:
-        st.error("Offline / Connecting...")
+        st.error("Backend Offline / Connecting...")
     st.markdown('</div>', unsafe_allow_html=True)
 
 with col2:
