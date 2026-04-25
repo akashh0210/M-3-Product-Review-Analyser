@@ -26,7 +26,8 @@ export async function mcpPush(
       const result = await appendToGoogleDoc(
         serverUrl,
         config.googleDocId,
-        weeklyNote
+        weeklyNote,
+        config.hfToken
       );
       if (result.success) {
         console.log(`✅ Appended ${result.insertedTextLength} characters to Google Doc`);
@@ -47,7 +48,8 @@ export async function mcpPush(
         serverUrl,
         config.gmailRecipients,
         subject,
-        emailDraft
+        emailDraft,
+        config.hfToken
       );
       if (result.success) {
         console.log(`✅ Email sent successfully (ID: ${result.messageId})`);

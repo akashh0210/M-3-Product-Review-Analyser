@@ -11,17 +11,18 @@ export interface RawAppStoreReview {
   version: string;
 }
 
-const COUNTRY_CODES = ['us', 'gb', 'in', 'ca', 'au'];
+const COUNTRY_CODES = ['us', 'gb', 'in', 'ca', 'au', 'ae', 'sg'];
 
 async function tryFetchReviews(appId: string, country: string): Promise<RawAppStoreReview[]> {
   let allReviews: RawAppStoreReview[] = [];
   for (let page = 1; page <= 10; page++) {
     const reviews = await store.reviews({
       id: appId,
-      sort: store.sort.RECENT,
+      sort: store.sort.HELPFUL,
       page,
       country
     });
+    console.log(`      📄 Page ${page}: ${reviews.length} reviews`);
     if (reviews.length === 0) break;
     allReviews = allReviews.concat(reviews.map(r => ({
       score: r.score,
@@ -63,15 +64,34 @@ export async function fetchAppStoreReviews(appId: string): Promise<RawAppStoreRe
 
   for (const country of COUNTRY_CODES) {
     try {
-      allReviews = await tryFetchReviews(appId, country);
-      if (allReviews.length > 0) {
-        console.log(`📱 Fetched ${allReviews.length} App Store reviews (country: ${country})`);
-        break;
+      console.log(`   📱 Trying country: ${country}...`);
+      const countryReviews = await tryFetchReviews(appId, country);
+      if (countryReviews.length > 0) {
+        console.log(`   📱 Found ${countryReviews.length} reviews in ${country}`);
+        allReviews = allReviews.concat(countryReviews);
+      } else {
+        console.log(`   📱 No reviews found in ${country}`);
       }
+      
+      if (allReviews.length >= 500) break;
+      
+      // Small delay to avoid rate limiting
+      await new Promise(resolve => setTimeout(resolve, 3000));
     } catch (err: any) {
       console.warn(`   ⚠️ App Store country ${country} failed: ${err.message}`);
     }
   }
+
+  // Deduplicate by text
+  const seen = new Set();
+  allReviews = allReviews.filter(r => {
+    const key = `${r.title}|${r.text}`;
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+
+  console.log(`📱 Total unique App Store reviews fetched: ${allReviews.length}`);
 
   // Fallback: try CSV if API returns nothing
   if (allReviews.length === 0) {

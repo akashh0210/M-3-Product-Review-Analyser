@@ -63,40 +63,44 @@ To enable weekly automated runs on GitHub:
     - Scroll to `Workflow permissions`.
     - Select `Read and write permissions`.
     - Click `Save`.
-4.  **Optional Variables**: You can also add `Variables` (like `PRODUCT_NAME`, `APP_STORE_ID`) in the same settings page to override defaults without changing code.
 
-The pipeline will now run every Monday at 9:30 AM IST and commit the results back to your repo!
+## 🛠️ Setup & Installation
 
----
-
-## 🚀 Setup & Installation
-
-### Prerequisites
-- Node.js 18+
-- [Groq API Key](https://console.groq.com/) (Free tier works)
-
-### Installation
+### 1. Clone & Install
 ```bash
-git clone <your-repo-url>
-cd app-review-insights-analyser
+git clone https://github.com/your-username/app-review-analyser.git
+cd app-review-analyser
 npm install
 ```
 
-### Configuration
-Create a `.env` file from the provided template:
-```env
-GROQ_API_KEY=gsk_...
-PRODUCT_NAME=Groww
-APP_STORE_ID=1404684361
-PLAY_STORE_PACKAGE=com.nextbillion.groww
-REVIEW_WINDOW_WEEKS=12
-MAX_THEMES=5
+### 2. Configure Environment (`.env`)
+Create a `.env` file based on `.env.example`:
 
-# Optional MCP (Google Docs + Gmail)
-GOOGLE_DOC_ID=...
-ENABLE_GMAIL_SEND=false
-GMAIL_RECIPIENTS=...
+| Variable | Description |
+| :--- | :--- |
+| `GROQ_API_KEY` | Your Groq Cloud API Key |
+| `MCP_SERVER_URL` | The URL of your hosted FastAPI bridge (e.g., Hugging Face) |
+| `HF_TOKEN` | (Optional) Access token for private HF Spaces |
+| `GOOGLE_DOC_ID` | The ID of the Google Doc to append results to |
+| `GMAIL_RECIPIENTS` | Comma-separated list of emails |
+
+### 3. Deploy the MCP Bridge (Hugging Face)
+To enable Google Docs and Gmail, you must deploy the internal bridge:
+1.  Create a **Docker Space** on Hugging Face.
+2.  Upload the contents of the `mcp-server/` folder.
+3.  Add `GOOGLE_CREDENTIALS_JSON` and `GOOGLE_TOKEN_JSON` as **Secrets** in HF Settings.
+4.  Copy the **Direct URL** into your `.env` as `MCP_SERVER_URL`.
+
+## 📈 Usage
+
+### Run Locally
+```bash
+npm run run
 ```
+
+### Automated Weekly Run
+The pipeline is pre-configured to run every **Monday at 00:00 UTC** via GitHub Actions.
+You can also trigger it manually from the **Actions** tab in your repository.
 
 ---
 

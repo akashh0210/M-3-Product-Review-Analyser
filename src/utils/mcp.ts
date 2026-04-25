@@ -5,9 +5,13 @@
 /**
  * Check if the MCP server is healthy
  */
-export async function checkMcpHealth(serverUrl: string): Promise<boolean> {
+export async function checkMcpHealth(serverUrl: string, hfToken?: string): Promise<boolean> {
   try {
-    const response = await fetch(serverUrl, { method: 'GET' });
+    const headers: Record<string, string> = {};
+    if (hfToken) {
+      headers['Authorization'] = `Bearer ${hfToken}`;
+    }
+    const response = await fetch(serverUrl, { method: 'GET', headers });
     return response.ok;
   } catch (err) {
     return false;
@@ -20,14 +24,20 @@ export async function checkMcpHealth(serverUrl: string): Promise<boolean> {
 export async function appendToGoogleDoc(
   serverUrl: string,
   docId: string,
-  content: string
+  content: string,
+  hfToken?: string
 ): Promise<{ success: boolean; insertedTextLength: number }> {
   try {
     console.log(`🔌 Calling Hosted MCP: POST /append_to_doc...`);
     
+    const headers: Record<string, string> = { 'Content-Type': 'application/json' };
+    if (hfToken) {
+      headers['Authorization'] = `Bearer ${hfToken}`;
+    }
+
     const response = await fetch(`${serverUrl.replace(/\/$/, '')}/append_to_doc`, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers,
       body: JSON.stringify({
         doc_id: docId,
         content: content
@@ -54,14 +64,20 @@ export async function sendGmail(
   serverUrl: string,
   to: string[],
   subject: string,
-  body: string
+  body: string,
+  hfToken?: string
 ): Promise<{ success: boolean; messageId?: string }> {
   try {
     console.log(`🔌 Calling Hosted MCP: POST /create_email_draft...`);
     
+    const headers: Record<string, string> = { 'Content-Type': 'application/json' };
+    if (hfToken) {
+      headers['Authorization'] = `Bearer ${hfToken}`;
+    }
+
     const response = await fetch(`${serverUrl.replace(/\/$/, '')}/create_email_draft`, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers,
       body: JSON.stringify({
         to: to.join(', '),
         subject: subject,

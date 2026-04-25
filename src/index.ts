@@ -24,7 +24,7 @@ async function main() {
     // 1.1 MCP Health Check
     if (config.mcpServerUrl) {
       console.log('📡 Checking Hosted MCP server health...');
-      const isHealthy = await checkMcpHealth(config.mcpServerUrl);
+      const isHealthy = await checkMcpHealth(config.mcpServerUrl, config.hfToken);
       if (isHealthy) {
         console.log('✅ Hosted MCP server is online');
       } else {
