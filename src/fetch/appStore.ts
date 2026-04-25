@@ -2,6 +2,7 @@ import store from 'app-store-scraper';
 import fs from 'fs/promises';
 import path from 'path';
 import { parse } from 'csv-parse/sync';
+import { withRetry } from '../utils/retry.js';
 
 export interface RawAppStoreReview {
   score: number;
@@ -11,17 +12,26 @@ export interface RawAppStoreReview {
   version: string;
 }
 
-const COUNTRY_CODES = ['us', 'gb', 'in', 'ca', 'au', 'ae', 'sg'];
+const COUNTRY_CODES = ['us', 'gb', 'in', 'ca', 'au', 'ae', 'sg', 'hk', 'nz', 'ie'];
 
 async function tryFetchReviews(appId: string, country: string): Promise<RawAppStoreReview[]> {
   let allReviews: RawAppStoreReview[] = [];
   for (let page = 1; page <= 10; page++) {
-    const reviews = await store.reviews({
-      id: appId,
-      sort: store.sort.HELPFUL,
-      page,
-      country
+    const reviews = await withRetry(async () => {
+      return await store.reviews({
+        id: appId,
+        sort: store.sort.HELPFUL,
+        page,
+        country
+      });
+    }, {
+      retries: 2,
+      baseDelay: 4000,
+      onRetry: (err, attempt) => {
+        console.warn(`      ⚠️ App Store retry (Page ${page}, ${country}) - Attempt ${attempt}`);
+      }
     });
+
     console.log(`      📄 Page ${page}: ${reviews.length} reviews`);
     if (reviews.length === 0) break;
     allReviews = allReviews.concat(reviews.map(r => ({
@@ -75,8 +85,9 @@ export async function fetchAppStoreReviews(appId: string): Promise<RawAppStoreRe
       
       if (allReviews.length >= 500) break;
       
-      // Small delay to avoid rate limiting
-      await new Promise(resolve => setTimeout(resolve, 3000));
+      // Increased delay with jitter to avoid Apple's strict rate limits
+      const jitter = Math.random() * 2000;
+      await new Promise(resolve => setTimeout(resolve, 5000 + jitter));
     } catch (err: any) {
       console.warn(`   ⚠️ App Store country ${country} failed: ${err.message}`);
     }
