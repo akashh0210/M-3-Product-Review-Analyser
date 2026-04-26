@@ -25,6 +25,17 @@ This project is built for the **PM Fellowship Learn in Public Challenge** based 
 - **Grounded Insights:** Every quote in the weekly note is verified to be an exact word-for-word copy from a real review.
 - **Multi-Channel Delivery:** Generates Markdown reports, Email drafts, and optionally pushes to Google Docs/Gmail via MCP.
 
+## Tech Stack
+
+- **Runtime:** Node.js 20+ with TypeScript (ESM)
+- **AI Models:** Groq Cloud (`llama-3.3-70b-versatile` for synthesis, `llama-3.1-8b-instant` for processing)
+- **Frontend Dashboard:** Streamlit (Python)
+- **Backend Bridge:** FastAPI (Python)
+- **Automation:** GitHub Actions (Weekly cron + dispatch)
+- **Infrastructure:** Hugging Face Spaces (Docker)
+- **Reverse Proxy:** Nginx (Internal routing for API + Dashboard)
+- **APIs:** Google Docs & Gmail (via Google OAuth 2.0)
+
 ---
 
 ## Phase-wise Workflow
