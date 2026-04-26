@@ -21,8 +21,8 @@ export async function clusterThemes(
     }];
   }
 
-  // Batching strategy: chunks of 100
-  const batchSize = 100;
+  // Batching strategy: chunks of 50 to stay under Groq TPM limits
+  const batchSize = 50;
   const batches: Review[][] = [];
   for (let i = 0; i < reviews.length; i += batchSize) {
     batches.push(reviews.slice(i, i + batchSize));

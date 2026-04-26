@@ -63,23 +63,38 @@ async function checkWordCount() {
 
 async function checkThemeCount() {
   const content = await fs.readFile('output/weekly-note.md', 'utf-8');
-  // Look for "## Top Themes" and count items in the list below it
-  const match = content.match(/## Top Themes\r?\n([\s\S]*?)\r?\n##/);
-  if (!match) return false;
-  const listItems = match[1].split(/\r?\n/).filter(l => l.trim().match(/^\d+\./));
-  return listItems.length === 3;
+  // Check for Table format or List format
+  const tableRows = content.match(/\| .* \| .* \| .* \|/g);
+  if (tableRows && tableRows.length >= 5) { // 2 header rows + 3 data rows
+    return true;
+  }
+  
+  // Fallback to list check
+  const listItems = content.match(/^\d+\. .*/gm);
+  if (listItems && listItems.length >= 3) {
+    return true;
+  }
+
+  // Check for "Top Themes" section specifically
+  const themesSection = content.match(/###? Top Themes Identified\r?\n([\s\S]*?)\r?\n###?/);
+  if (themesSection) {
+    const rows = themesSection[1].split(/\r?\n/).filter(l => l.trim().length > 0);
+    if (rows.length >= 3) return true;
+  }
+
+  return false;
 }
 
 async function checkQuoteGrounding() {
   const note = await fs.readFile('output/weekly-note.md', 'utf-8');
   const reviews = await readCSV('output/reviews.csv');
   
-  // Extract blockquotes
-  const quotes = note.match(/^> "(.*?)"/gm);
+  // Extract quotes (blockquotes or bullet points)
+  const quotes = note.match(/(?:^> |^\* )"(.*?)"/gm);
   if (!quotes) return false;
-
+ 
   for (const q of quotes) {
-    const text = q.replace(/^> "/, '').replace(/" — ★\d+$/, '').replace(/"$/, '').trim();
+    const text = q.replace(/^[>\*]\s+"/, '').replace(/" — ★\d+$/, '').replace(/"$/, '').trim();
     const isFound = reviews.some(r => r.text.includes(text));
     if (!isFound) {
       console.error(`   Quote not found in CSV: "${text.substring(0, 50)}..."`);

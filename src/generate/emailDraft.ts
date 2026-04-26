@@ -15,17 +15,13 @@ export function generateEmailDraft(
 
 ---
 
-Hi team,
+Dear Team,
 
-Please find below this week's app review pulse for **${product}**, summarizing user feedback from the App Store and Google Play.
+Please find below this week's App Review Pulse for **${product}**, summarizing user feedback from the App Store and Google Play for the period ${dateRange.from} - ${dateRange.to}.
 
 ${weeklyNote}
 
-**[🖨️ Access the raw documents folder for printing](./output/)**
-
----
-
-If any of these themes need deeper investigation or if you'd like to discuss priorities, let's connect this week.
+**Next Steps:** Please review and flag any themes requiring deeper analysis. Happy to discuss prioritization this week.
 
 Best regards,
 ${author}

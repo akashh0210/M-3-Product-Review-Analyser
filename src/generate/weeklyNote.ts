@@ -42,18 +42,21 @@ ACTION IDEAS:
 ${input.actions.map((a, i) => `${i + 1}. ${a.title}: ${a.description}`).join('\n')}
 
 FORMAT the note using this structure:
-# Weekly App Review Pulse — ${input.product}
-**Period:** ... | **Reviews:** ... | **Avg Rating:** ...
-[🖨️ View raw documents for printing](./output/)
+# ${input.product} App Review Summary
+**Period:** ${input.dateRange.from} - ${input.dateRange.to} | **Total Reviews:** ${input.totalReviews} | **Average Rating:** ${input.avgRating.toFixed(1)}/5
 
-## Top Themes
-(numbered list with count and sentiment)
+### Top Themes Identified
+| Theme | Reviews | Sentiment |
+| :--- | :--- | :--- |
+(Create a table for the top 3 themes)
 
-## What Users Are Saying
-(3 blockquotes)
+### Key User Quotes
+(List 3 quotes in this format: "Quote text" — ★★★★)
 
-## Recommended Actions
-(numbered list)`;
+### Recommended Actions
+(List 3 actions in this format: **Team Name** — Action Description)
+
+[🖨️ View raw documents for printing](./output/)`;
 
   let note = await callLLM(apiKey, {
     systemPrompt,
