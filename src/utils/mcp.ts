@@ -56,8 +56,15 @@ export async function appendToGoogleDoc(
       });
 
       if (!response.ok) {
-        const errorData = await response.json();
-        throw new Error(errorData.detail || 'Unknown error');
+        const text = await response.text();
+        let detail = 'Unknown error';
+        try {
+          const errorData = JSON.parse(text);
+          detail = errorData.detail || text;
+        } catch {
+          detail = text.substring(0, 200); // Capture start of HTML if it's not JSON
+        }
+        throw new Error(detail);
       }
 
       const result = await response.json();
@@ -105,8 +112,15 @@ export async function sendGmail(
       });
 
       if (!response.ok) {
-        const errorData = await response.json();
-        throw new Error(errorData.detail || 'Unknown error');
+        const text = await response.text();
+        let detail = 'Unknown error';
+        try {
+          const errorData = JSON.parse(text);
+          detail = errorData.detail || text;
+        } catch {
+          detail = text.substring(0, 200); // Capture start of HTML if it's not JSON
+        }
+        throw new Error(detail);
       }
 
       const result = await response.json();
