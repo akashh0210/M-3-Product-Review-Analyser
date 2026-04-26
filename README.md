@@ -89,7 +89,7 @@ Create a `.env` file based on `.env.example`:
 | :--- | :--- |
 | `GROQ_API_KEY` | Your Groq Cloud API Key |
 | `MCP_SERVER_URL` | The URL of your hosted FastAPI bridge (e.g., Hugging Face) |
-| `HF_TOKEN` | (Optional) Access token for private HF Spaces |
+| `M3_HF_TOKEN` | (Required) Access token for sync and MCP auth |
 | `GOOGLE_DOC_ID` | The ID of the Google Doc to append results to |
 | `GMAIL_RECIPIENTS` | Comma-separated list of emails |
 
@@ -98,7 +98,16 @@ To enable Google Docs and Gmail, you must deploy the internal bridge:
 1.  Create a **Docker Space** on Hugging Face.
 2.  Upload the contents of the `mcp-server/` folder.
 3.  Add `GOOGLE_CREDENTIALS_JSON` and `GOOGLE_TOKEN_JSON` as **Secrets** in HF Settings.
-4.  Copy the **Direct URL** into your `.env` as `MCP_SERVER_URL`.
+4.  Add `M3_HF_TOKEN` as a **Secret** in HF Settings (this token will be checked against incoming requests).
+5.  Copy the **Direct URL** into your `.env` as `MCP_SERVER_URL`.
+
+## Live Dashboard
+
+The hosted deployment includes an **Executive Dashboard** that allows stakeholders to:
+- **Visualize Sentiment:** Real-time donut charts and rating velocity trends.
+- **Trigger Analysis:** A one-click button to dispatch a fresh GitHub Actions run.
+- **Direct Access:** One-click links to the generated Google Doc and Gmail Drafts.
+- **Sync Status:** Real-time verification of the data pipeline health.
 
 ## Usage
 
