@@ -126,12 +126,16 @@ async function checkMCPConfig(): Promise<boolean> {
     return true; // informational, never fails
   }
 
-  // If MCP is configured, check for credentials file
-  try {
-    await fs.stat('credentials.json');
-    console.log('   ✅ MCP configured and credentials.json found');
-  } catch {
-    console.warn('   ⚠️ MCP configured but credentials.json missing — auth will be required');
+  // Only check for local credentials if we are NOT using a hosted server
+  if (!process.env.MCP_SERVER_URL) {
+    try {
+      await fs.stat('credentials.json');
+      console.log('   ✅ Local MCP credentials found');
+    } catch {
+      console.warn('   ⚠️ Local credentials.json missing — will be required for non-hosted runs');
+    }
+  } else {
+    console.log('   ℹ️ Using hosted MCP server (local credentials not required)');
   }
 
   if (enableGmail) {
