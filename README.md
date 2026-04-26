@@ -1,12 +1,3 @@
----
-title: App Review Insights Analyser
-emoji: 📊
-colorFrom: blue
-colorTo: indigo
-sdk: docker
-pinned: false
----
-
 # App Review Insights Analyser
 
 An AI-powered workflow that converts recent public App Store and Google Play reviews into a concise weekly product pulse for Product, Growth, Support, and Leadership teams. 
