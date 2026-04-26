@@ -20,7 +20,7 @@ jobs:
 
       - name: Push to Hub
         env:
-          HF_SYNC_TOKEN: ${{ secrets.HF_SYNC_TOKEN }}
+          M3_HF_TOKEN: ${{ secrets.M3_HF_TOKEN }}
         run: |
-          git remote add hf https://akashh0210:${HF_SYNC_TOKEN}@huggingface.co/spaces/akashh0210/product-pulse-server
+          git remote add hf https://akashh0210:${M3_HF_TOKEN}@huggingface.co/spaces/akashh0210/product-pulse-server
           git push --force hf main

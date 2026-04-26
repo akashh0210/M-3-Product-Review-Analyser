@@ -46,6 +46,6 @@ export function getConfig(): PipelineConfig {
     enableGmailSend,
     gmailRecipients,
     mcpServerUrl: process.env.MCP_SERVER_URL || undefined,
-    hfToken: process.env.HF_TOKEN || undefined,
+    hfToken: process.env.M3_HF_TOKEN || process.env.HF_TOKEN || undefined,
   };
 }

@@ -38,7 +38,7 @@ jobs:
           MAX_THEMES: ${{ vars.MAX_THEMES || '5' }}
           # Hosted MCP Bridge (Google Docs + Gmail delivery)
           MCP_SERVER_URL: ${{ secrets.MCP_SERVER_URL }}
-          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          HF_TOKEN: ${{ secrets.M3_HF_TOKEN }}
           GOOGLE_DOC_ID: ${{ vars.GOOGLE_DOC_ID || '1lEv0CfmaeMp0hdLeljRQ2XHdcS46WQjtBjIwtgC0rmM' }}
           ENABLE_GMAIL_SEND: ${{ vars.ENABLE_GMAIL_SEND || 'true' }}
           GMAIL_RECIPIENTS: ${{ vars.GMAIL_RECIPIENTS || 'akash102502@gmail.com' }}
