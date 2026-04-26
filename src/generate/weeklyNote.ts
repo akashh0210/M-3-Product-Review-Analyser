@@ -44,6 +44,7 @@ ${input.actions.map((a, i) => `${i + 1}. ${a.title}: ${a.description}`).join('\n
 FORMAT the note using this structure:
 # Weekly App Review Pulse — ${input.product}
 **Period:** ... | **Reviews:** ... | **Avg Rating:** ...
+[🖨️ View raw documents for printing](./output/)
 
 ## Top Themes
 (numbered list with count and sentiment)

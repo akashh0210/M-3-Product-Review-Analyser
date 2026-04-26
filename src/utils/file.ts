@@ -78,3 +78,26 @@ export async function readCSV(filePath: string): Promise<Record<string, string>[
     skip_empty_lines: true,
   });
 }
+
+/**
+ * Check if a file exists and is newer than maxAgeHours
+ */
+export async function isCacheValid(filePath: string, maxAgeHours: number): Promise<boolean> {
+  try {
+    const stats = await fs.stat(filePath);
+    const now = new Date();
+    const modified = new Date(stats.mtime);
+    const ageHours = (now.getTime() - modified.getTime()) / (1000 * 60 * 60);
+    return ageHours <= maxAgeHours;
+  } catch (err) {
+    // If file doesn't exist, cache is invalid
+    return false;
+  }
+}
+
+/**
+ * Read a text file as a string
+ */
+export async function readFileString(filePath: string): Promise<string> {
+  return await fs.readFile(filePath, 'utf-8');
+}

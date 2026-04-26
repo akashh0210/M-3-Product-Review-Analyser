@@ -21,6 +21,8 @@ Please find below this week's app review pulse for **${product}**, summarizing u
 
 ${weeklyNote}
 
+**[🖨️ Access the raw documents folder for printing](./output/)**
+
 ---
 
 If any of these themes need deeper investigation or if you'd like to discuss priorities, let's connect this week.

@@ -18,7 +18,7 @@ This project is built for the **PM Fellowship Learn in Public Challenge** based 
 
 ---
 
-## 🛠️ Phase-wise Workflow
+## Phase-wise Workflow
 
 ### Phase 1: Ingestion
 Fetches reviews from the Apple App Store and Google Play Store. Includes a CSV fallback path in case of network or rate limits.
@@ -49,7 +49,7 @@ Automates the pipeline using GitHub Actions to run every Monday.
 
 ---
 
-## ⏰ Automation Setup
+## Automation Setup
 
 To enable weekly automated runs on GitHub:
 
@@ -64,7 +64,7 @@ To enable weekly automated runs on GitHub:
     - Select `Read and write permissions`.
     - Click `Save`.
 
-## 🛠️ Setup & Installation
+## Setup & Installation
 
 ### 1. Clone & Install
 ```bash
@@ -91,7 +91,7 @@ To enable Google Docs and Gmail, you must deploy the internal bridge:
 3.  Add `GOOGLE_CREDENTIALS_JSON` and `GOOGLE_TOKEN_JSON` as **Secrets** in HF Settings.
 4.  Copy the **Direct URL** into your `.env` as `MCP_SERVER_URL`.
 
-## 📈 Usage
+## Usage
 
 ### Run Locally
 ```bash
@@ -104,7 +104,7 @@ You can also trigger it manually from the **Actions** tab in your repository.
 
 ---
 
-## 📦 Deliverables
+## Deliverables
 
 1.  **[reviews.csv](output/reviews.csv)**: Normalized data used for analysis.
 2.  **[weekly-note.md](output/weekly-note.md)**: A one-page scannable pulse (Top 3 themes, 3 quotes, 3 actions).
@@ -113,7 +113,7 @@ You can also trigger it manually from the **Actions** tab in your repository.
 
 ---
 
-## 🔌 MCP Setup (Optional)
+## MCP Setup (Optional)
 
 To enable **Stage 6 (Google Docs + Gmail push)**:
 1. Create a Google Cloud Project with Docs and Gmail APIs enabled.
@@ -123,7 +123,7 @@ To enable **Stage 6 (Google Docs + Gmail push)**:
 
 ---
 
-## 🏷️ Theme Legend
+## Theme Legend
 
 The system identifies recurring themes such as:
 - **App Performance & Features:** Speed, crashes, and core functionality.
@@ -134,6 +134,6 @@ The system identifies recurring themes such as:
 
 ---
 
-## 👤 Author
+## Author
 **Sk Akash Ali**
 PM Fellowship Fellow

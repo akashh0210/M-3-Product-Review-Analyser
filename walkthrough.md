@@ -28,18 +28,18 @@ I have successfully completed **Phase 5 — Evaluation**, marking the finalizati
 The project successfully processes 500 reviews, clusters them into themes, generates grounded reports, and validates them—all in under **4 minutes** on a standard internet connection.
 
 ```text
-🧪 Project Validation Suite
+Project Validation Suite
 
-✅ File existence (reviews.csv) passed
-✅ File existence (weekly-note.md) passed
-✅ File existence (email-draft.md) passed
-✅ Word count (≤ 250 words) passed
-✅ Theme count (Top 3) passed
-✅ Quote grounding passed
-✅ PII Absence passed
-✅ CSV Integrity passed
+File existence (reviews.csv) passed
+File existence (weekly-note.md) passed
+File existence (email-draft.md) passed
+Word count (≤ 250 words) passed
+Theme count (Top 3) passed
+Quote grounding passed
+PII Absence passed
+CSV Integrity passed
 
-🏁 Validation finished. Status: PASS
+Validation finished. Status: PASS
 ```
 
 ### Deliverables Ready

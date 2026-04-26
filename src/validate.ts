@@ -64,9 +64,9 @@ async function checkWordCount() {
 async function checkThemeCount() {
   const content = await fs.readFile('output/weekly-note.md', 'utf-8');
   // Look for "## Top Themes" and count items in the list below it
-  const match = content.match(/## Top Themes\n([\s\S]*?)\n##/);
+  const match = content.match(/## Top Themes\r?\n([\s\S]*?)\r?\n##/);
   if (!match) return false;
-  const listItems = match[1].split('\n').filter(l => l.trim().match(/^\d+\./));
+  const listItems = match[1].split(/\r?\n/).filter(l => l.trim().match(/^\d+\./));
   return listItems.length === 3;
 }
 
