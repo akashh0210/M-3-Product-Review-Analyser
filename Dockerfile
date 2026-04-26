@@ -11,14 +11,19 @@ RUN apt-get update && apt-get install -y \
     dos2unix \
     && rm -rf /var/lib/apt/lists/*
 
-# Install Python dependencies
-RUN pip install --no-cache-dir fastapi uvicorn google-auth-oauthlib google-api-python-client streamlit requests pandas
+# Copy only requirements first to leverage Docker cache
+COPY mcp-server/requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir streamlit requests pandas altair
 
-# Copy the server code
+# Copy the rest of the application
 COPY mcp-server/ .
 
-# Ensure start script is executable and has Linux line endings
-RUN dos2unix start.sh && chmod +x start.sh
+# Fix line endings and permissions for the start script
+RUN apt-get update && apt-get install -y dos2unix \
+    && dos2unix start.sh \
+    && chmod +x start.sh \
+    && apt-get purge -y dos2unix && apt-get autoremove -y && rm -rf /var/lib/apt/lists/*
 
 # HF Spaces use 7860
 ENV PORT=7860
