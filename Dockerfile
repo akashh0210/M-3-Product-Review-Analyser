@@ -1,4 +1,4 @@
-FROM python:3.14-slim
+FROM python:3.11-slim
 
 WORKDIR /app
 
@@ -8,6 +8,7 @@ RUN apt-get update && apt-get install -y \
     curl \
     software-properties-common \
     git \
+    dos2unix \
     && rm -rf /var/lib/apt/lists/*
 
 # Install Python dependencies
@@ -16,8 +17,8 @@ RUN pip install --no-cache-dir fastapi uvicorn google-auth-oauthlib google-api-p
 # Copy the server code
 COPY mcp-server/ .
 
-# Ensure start script is executable
-RUN chmod +x start.sh
+# Ensure start script is executable and has Linux line endings
+RUN dos2unix start.sh && chmod +x start.sh
 
 # HF Spaces use 7860
 ENV PORT=7860
